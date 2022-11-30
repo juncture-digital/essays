@@ -20,8 +20,8 @@
 
 - **[Viewer Tags](#viewer-tags)**
     - [.ve-header](#ve-header)
-    - [.ve-image](#ve-image)
-    - [.ve-image-grid](#ve-image-grid)
+    - [.ve-map](#ve-map)
+    - [.ve-media](#ve-image)
     - [.ve-meta](#ve-meta)
     - [.ve-style](#ve-style)
 
@@ -111,63 +111,71 @@ As with the images displayed by the `.ve-image` tag, the banner image used by th
     - [About](/about)
 ```
 
-## [⇧](#top) .ve-image {#ve-image}
+## [⇧](#top) .ve-map {#ve-map}
 
-The `.ve-image` tag is the most commonly used essay tag.  The tag creates an IIIF image viewer that is able to display one or more images.
+The `.ve-map` tag creates a map viewer that displays a base map with optional map layers.  The map supports zooming and panning.
+
+### .ve-map Attributes
+
+- `center` (_Geographic Coordinates_ or _Wikidata QID_):  The _center_ attribute defines the center point of a displayed map.
+- `zoom` (_number_):  The _zoom_ attribute defines the zoom level of a displayed map.
+
+## [⇧](#top) .ve-media {#ve-media}
+
+The `.ve-media` tag is the most commonly used essay tag.  The tag creates an IIIF viewer that is able to display images, video, or audio.
 
 ### .ve-image Attributes
 
-- `alt` (_text string_):  The text to use in the _alt_ tag used by screen readers.  If not provided an _alt_ tag is automatically generated from the manifest label property.\
-- `compare` ("_true_" or "_false_"):  The _compare_ attribute is used in multi-image mode to compare 2 or 3 images.  When not combined with either the _curtain_ or _sync_ attribute the default compare mode is invoked.  In the default mode comparisons are limited to 2 images.   2 or 3 images may be compared when _curtain_ or _sync_ attributes are included.  In the default mode the 2 images are stacked (one is overlaid on the other) and a slider is used to show or hide portions of the bottom image.  The compared images cannot be zoomed or panned but one or both may  be cropped to align the images for comparison.
-- `curtain` ("_true_" or "_false_"):  The _curtain_ attribute is used in combination with the _compare_ attribute.  When comparing images in _curtain_ mode up to 3 images may be compared and deep zoom and panning is enabled.  Image cropping is currently not supported in _curtain_ mode.
+- `alt` (_text string_):  The text to use in the _alt_ tag used by screen readers.  If not provided an _alt_ tag is automatically generated from the manifest label property.
+- `compare` ("_true_" or "_false_"):  The _compare_ attribute is used compare 2 images.  In compare mode the 2 images are stacked (one is overlaid on the other) and a slider is used to show or hide portions of the bottom image.  The compared images cannot be zoomed or panned but one or both may  be cropped to align the images for comparison.
 - `fit` ("_cover_" or "_contain_"):  The _fit_ attribute controls the display of an image in the viewer viewport.  In the default mode (_contain_) the entire image is show with letter-boxing applied to the top and bottom or left and right when the image aspect ratio differs from the viewers.  When the value _cover_ is used the entire viewport is filled and the displayed portion of the image is cropped as needed to fit.
 - `full` ("_true_" or "_false_"):  Use the fill width of browser viewport for the image.  Scale the image height proportional to the source image.  By default the image will be auto-sized such that its height is not more than 40% of the viewport height.
 - `grid` ("_true_" or "_false_"):  Displays multiple images in a responsive grid. When clicked the images will create a popup window with full deep zoom and panning enabled. 
-- `left` ("_true_" or "_false_"):  Position the image in the left half of the viewport and scale the width proportionally.  Text will wrap around the image unless the _sticky_ attribute is included.
+- `height` (_requested viewer height in pixels or as a percentage of viewing area width_):  A requested size for the  viewer height.  The default behavior is to use the full width of the available window and scale the viewer height to retain the aspect ratio of the source item (image or video).
+- `left` ("_true_" or "_false_"):  Position the viewer in the left half of the viewport and scale the width proportionally.  Text will wrap around the viewer unless the _sticky_ attribute is included.
+- `manifest` (_IIIF manifest URL_) :  The URL to the IIIF manifest for the item to display in the viewer.  This attribute is omitted when multiple using the viewer in multi-image mode.  This attribute may also be omitted in single image mode when QIDs are in scope.  When a _manifest_ attribute is not specified the most relevant (closest) QID to the tag is used to generate an IIIF manifest URL.  More information on QID use can be found in the [Wikidata](#wikidata) section.
 - `options` (_IIIF image options_):  The _options_ attribute is used to define the [IIIF image request parameters](https://iiif.io/api/image/2.1/#image-request-parameters) for an image.  This attribute is most commonly used to define a coordinates for displaying an image region.    
-- `right` ("_true_" or "_false_"):  Position the image in the right half of the viewport and scale the width proportionally. Text will wrap around the image unless the _sticky_ attribute is included.
+- `right` ("_true_" or "_false_"):  Position the viewer in the right half of the viewport and scale the width proportionally. Text will wrap around the viewer unless the _sticky_ attribute is included.
 - `seq` (_image sequence number_):  A number defining the image to use in a multi-image manifest.  If not specified the default value is _1_.
-- `src` (_IIIF image manifest URL_) :  The URL to the IIIF manifest for the image to display in the viewer.  This attribute is omitted when multiple using the viewer in multi-image mode.  This attribute may also be omitted in single image mode when QIDs are in scope.  When a _src_ attribute is not specified the most relevant (closest) QID to the tag is used to generate an IIIF manifest URL.  More information on QID use can be found in the [Wikidata](#wikidata) section.
-- `sticky` ("_true_" or "_false_"):  The _sticky_ attribute causes the image viewer to "stick" to the top of the viewing area when the essay text is scrolled.  The viewer will stick in position until all content in the enclosing section has scrolled through the viewing area.
-- `sync` ("_true_" or "_false_"):  The _sync_ attribute is used in combination with the _compare_ attribute.  When comparing images in _sync_ mode up to 3 images may be compared and deep zoom and panning is enabled.  Image cropping is currently not supported in _sync_ mode. In _sync_ mode the images to compare are displayed side-by-side with zoom and panning actions applied to each simultaneously.
-- `width` (_requested viewer width in pixels or as a percentage of viewing area width_):  A requested size for the image viewer window.
-- `zoom-on-scroll` ("_true_" or "_false_"):  Specifies whether the image viewer will zoom the image when a scroll gesture is performed in the image viewer.  This is inhibited by default.
+- `sticky` ("_true_" or "_false_"):  The _sticky_ attribute causes the viewer to "stick" to the top of the viewing area when the essay text is scrolled.  The viewer will stick in position until all content in the enclosing section has scrolled through the viewing area.
+- `width` (_requested viewer width in pixels or as a percentage of viewing area width_):  A requested size for the  viewer width.  The default behavior is to use the full width of the available window.
+- `zoom-on-scroll` ("_true_" or "_false_"):  Specifies whether the viewer will zoom the image when a scroll gesture is performed in the image viewer.  This is inhibited by default.
 
 ### Multiple images mode
 
-To use more than one image with a `.ve-image` viewer the Markdown nested list notation is used.  A Markdown list is defined by prefixing the `    - ` text to each list element on separate lines.   Each list element can include positional and/or key-value attributes for the associated image.
+To use more than one image with a `.ve-media` tag the Markdown nested list notation is used.  A Markdown list is defined by prefixing the `    - ` text to each list element on separate lines.   Each list element can include positional and/or key-value attributes for the associated image.
 
 ### Manifest URLs
 
 The manifest URL is a URL to an IIIF presentation manifest that is compliant to version 2.x or version 3.0 of the IIIF Presentation Standard.
 
-When referring to a manifest automatically generated by Juncture a short-form version of the auto-generated URL may be used.  The short-form version takes the form of `<SOURCE>:<SOURCE_ID>`, where `<SOURCE>` is the a site code for one of the image hosting sites supporting manifest generation by Juncture.  The `<SOURCE_ID>` value is a unique resource ID applicable to the site.  For example, Juncture is able to automatically generate IIIF manifests for images hosted on [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page).  A full auto-generated manifest for the image at [https://commons.wikimedia.org/wiki/File:Sunflower.jpg](https://commons.wikimedia.org/wiki/File:Sunflower.jpg){target=_blank} would be [https://iiif.juncture-digital.org/wc:Sunflow.jpg/manifest.json](https://iiif.juncture-digital.org/wc:Sunflow.jpg/manifest.json).  The short form version of this URL (**wc:Sunflower.jpg**) can be used with any Juncture tag (.ve-image, .ve-header, .ve-image-grid, and others) that accept IIIF manifest attributes.
+When referring to a manifest automatically generated by Juncture a short-form version of the auto-generated URL may be used.  The short-form version takes the form of `<SOURCE>:<SOURCE_ID>`, where `<SOURCE>` is the a site code for one of the hosting sites supporting manifest generation by Juncture.  The `<SOURCE_ID>` value is a unique resource ID applicable to the site.  For example, Juncture is able to automatically generate IIIF manifests for images and other media hosted on [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page).  A full auto-generated manifest for the image at [https://commons.wikimedia.org/wiki/File:Sunflower.jpg](https://commons.wikimedia.org/wiki/File:Sunflower.jpg){target=_blank} would be [https://iiif.juncture-digital.org/wc:Sunflow.jpg/manifest.json](https://iiif.juncture-digital.org/wc:Sunflow.jpg/manifest.json).  The short form version of this URL (**wc:Sunflower.jpg**) can be used with any Juncture tag (.ve-media, .ve-header, and others) that accept IIIF manifest attributes.
 
 ### Examples
 
 - Using a Wikimedia Commons image using the short-form version of the manifest URL and an `alt` attribute.
 ```Markdown
-.ve-image wc:Sunflower.jpg alt="Sunflowers in a field"
+.ve-media wc:Sunflower.jpg alt="Sunflowers in a field"
 ```
 
 - Using a JSTOR Community Collections image using the short-form version of the manifest URL and `options` as positional attributes.
 ```Markdown
-.ve-image jstor:community.24604882 pct:35,42,10,25
+.ve-media jstor:community.24604882 pct:35,42,10,25
 ```
 
 - Above example using key-value attributes rather than positional.
 ```Markdown
-.ve-image src=jstor:community.24604882 options=pct:35,42,10,25
+.ve-media src=jstor:community.24604882 options=pct:35,42,10,25
 ```
 
 - Using a full manifest URL.
 ```Markdown
-.ve-image https://iiif.harvardartmuseums.org/manifests/object/299843
+.ve-media https://iiif.harvardartmuseums.org/manifests/object/299843
 ```
 
 - Using multiple images:
 ```Markdown
-.ve-image
+.ve-media
     - wc:Sunflower.jpg
     - jstor:community.24604882
 ```
