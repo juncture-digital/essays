@@ -10,7 +10,7 @@
   
 .ve-meta title="Juncture Documentation"
 
-.ve-header Documentation background=#5B152E logo=https://raw.githubusercontent.com/visual-essays/media/main/images/Juncture_Logo.png url=/ sticky
+.ve-header Documentation background=#5B152E logo=https://raw.githubusercontent.com/visual-essays/media/main/images/Juncture_Logo.png url=/docs sticky
 
 # Juncture Help {#top}
 
