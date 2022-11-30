@@ -1,3 +1,5 @@
+[⇧ Back](..)
+
 # Getting Started Guide
 
 This document provides step-by-step instructions for creating a simple Juncture essay.
