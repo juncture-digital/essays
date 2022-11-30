@@ -92,7 +92,7 @@ Juncture uses [Github](https://github.com/jstor-labs/juncture/wiki/Github-overvi
 
 ![create a visual essay](https://iiif.juncture-digital.org/thumbnail?url=https://raw.githubusercontent.com/juncture-digital/media/main/images/Create_Essay.png)
 
-The first step in getting acquainted with Juncture is to create a simple visual essay in your personal Github account. Write an essay about a topic you like and follow this [visual essay quick start guide](/docs/quick-start) to visualize your essay. It will take about 10 minutes to prepare the interactive essay.
+The first step in getting acquainted with Juncture is to create a simple visual essay in your personal Github account. Write an essay about a topic you like and follow this [visual essay quick start guide](/docs/getting-started) to visualize your essay. It will take about 10 minutes to prepare the interactive essay.
 
 ## View and Share your visual essays
 
