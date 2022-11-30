@@ -21,7 +21,7 @@
 - **[Viewer Tags](#viewer-tags)**
     - [.ve-header](#ve-header)
     - [.ve-map](#ve-map)
-    - [.ve-media](#ve-image)
+    - [.ve-media](#ve-media)
     - [.ve-meta](#ve-meta)
     - [.ve-style](#ve-style)
 
