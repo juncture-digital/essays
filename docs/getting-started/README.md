@@ -20,7 +20,7 @@ If you don't already have a Github account one can be created at [https://github
 
 Logging into Github from Juncture authorizes Juncture to interact with your Github repository content from the Juncture Editor tool.  Note that this is an optional step as Github files may be edited directly in the Github web interface or by using any number of client applications running on your local computer. This getting start guide assumes the Juncture Editor is used.  The ==video below=={0} shows the basic process for logging into Github from Juncture.
 
-.ve-media gh:visual-essays/media/videos/GitHub_Login.mp4 right
+.ve-media gh:juncture-digital/media/videos/GitHub_Login.mp4 right
 
 1. ==Select "Login" from the Juncture menu=={0,3}
 2. ==Login to Github=={4,7} with your Github username and password.
@@ -31,7 +31,7 @@ Logging into Github from Juncture authorizes Juncture to interact with your Gith
 
 Juncture provides a web-based editor for authoring visual essays.  The editor handles Github content management and includes a convenient preview option for viewing working versions of essays.  The Juncture editor also supports the automatic creation of viewer tags by simply dragging images and other media (including YouTube videos) into the browser window.
 
-.ve-media gh:visual-essays/media/images/Juncture_Editor.png right
+.ve-media gh:juncture-digital/media/images/Juncture_Editor.png right
 
 This section provides an overview of the Juncture editor sections.  Video clips in this document show many of the typical uses of the editor.
 
