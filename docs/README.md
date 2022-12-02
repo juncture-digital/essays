@@ -68,15 +68,15 @@ As with the images displayed by the `.ve-image` tag, the banner image used by th
 
 ### .ve-header Attributes
 
-- `label` (_text string_):  The text to use for the essay title. 
-- `subtitle` (_text string_):  The text to use for the essay subtitle.
-- `height` (_height in pixels_):  The height of the header (before collapsing when in _sticky_ mode).
-- `background` (_IIIF manifest URL_):  The URL to the IIIF manifest for the image to display as a banner image in the header.
-- `logo` (_logo image URL_): A URL to a logo image.
-- `url` (_URL associated with logo image_):  The URL that is invoked when the logo image is clicked.
-- `options` (_IIIF image options_):  The _options_ attribute is used to define the [IIIF image request parameters](https://iiif.io/api/image/2.1/#image-request-parameters) for an image.  This attribute is most commonly used to define a coordinates for displaying an image region.   
-- `position` ("_top_", "_center_" or "_bottom_"):  The portion of a cropped banner image to display.  The default is _center_.  Other recognized values are _top_ and _bottom_.
-- `sticky` ("_true_" or "_false_"):  If set to "_true_" the header will collapse into a condensed form and remain fixed at the top of the page.
+- **label** (_text string_):  The text to use for the essay title. 
+- **subtitle** (_text string_):  The text to use for the essay subtitle.
+- **height** (_height in pixels_):  The height of the header (before collapsing when in _sticky_ mode).
+- **background** (_IIIF manifest URL_):  The URL to the IIIF manifest for the image to display as a banner image in the header.
+- **logo** (_logo image URL_): A URL to a logo image.
+- **url** (_URL associated with logo image_):  The URL that is invoked when the logo image is clicked.
+- **options** (_IIIF image options_):  The _options_ attribute is used to define the [IIIF image request parameters](https://iiif.io/api/image/2.1/#image-request-parameters) for an image.  This attribute is most commonly used to define a coordinates for displaying an image region.   
+- **position** ("_top_", "_center_" or "_bottom_"):  The portion of a cropped banner image to display.  The default is _center_.  Other recognized values are _top_ and _bottom_.
+- **sticky** ("_true_" or "_false_"):  If set to "_true_" the header will collapse into a condensed form and remain fixed at the top of the page.
 
 ### Examples
 
@@ -93,8 +93,8 @@ The `.ve-map` tag creates a map viewer that displays a base map with optional ma
 
 ### .ve-map Attributes
 
-- `center` (_Geographic Coordinates_ or _Wikidata QID_):  The _center_ attribute defines the center point of a displayed map.
-- `zoom` (_number_):  The _zoom_ attribute defines the zoom level of a displayed map.
+- **center** (_Geographic Coordinates_ or _Wikidata QID_):  The _center_ attribute defines the center point of a displayed map.
+- **zoom** (_number_):  The _zoom_ attribute defines the zoom level of a displayed map.
 
 ## [⇧](#top) .ve-media {#ve-media}
 
@@ -102,20 +102,20 @@ The `.ve-media` tag is the most commonly used essay tag.  The tag creates an III
 
 ### .ve-media Attributes
 
-- `alt` (_text string_):  The text to use in the _alt_ tag used by screen readers.  If not provided an _alt_ tag is automatically generated from the manifest label property.
-- `compare` ("_true_" or "_false_"):  The _compare_ attribute is used compare 2 images.  In compare mode the 2 images are stacked (one is overlaid on the other) and a slider is used to show or hide portions of the bottom image.  The compared images cannot be zoomed or panned but one or both may  be cropped to align the images for comparison.
-- `fit` ("_cover_" or "_contain_"):  The _fit_ attribute controls the display of an image in the viewer viewport.  In the default mode (_contain_) the entire image is show with letter-boxing applied to the top and bottom or left and right when the image aspect ratio differs from the viewers.  When the value _cover_ is used the entire viewport is filled and the displayed portion of the image is cropped as needed to fit.
-- `full` ("_true_" or "_false_"):  Use the fill width of browser viewport for the image.  Scale the image height proportional to the source image.  By default the image will be auto-sized such that its height is not more than 40% of the viewport height.
-- `grid` ("_true_" or "_false_"):  Displays multiple images in a responsive grid. When clicked the images will create a popup window with full deep zoom and panning enabled. 
-- `height` (_requested viewer height in pixels or as a percentage of viewing area width_):  A requested size for the  viewer height.  The default behavior is to use the full width of the available window and scale the viewer height to retain the aspect ratio of the source item (image or video).
-- `left` ("_true_" or "_false_"):  Position the viewer in the left half of the viewport and scale the width proportionally.  Text will wrap around the viewer unless the _sticky_ attribute is included.
-- `manifest` (_IIIF manifest URL_) :  The URL to the IIIF manifest for the item to display in the viewer.  This attribute is omitted when multiple using the viewer in multi-image mode.  This attribute may also be omitted in single image mode when QIDs are in scope.  When a _manifest_ attribute is not specified the most relevant (closest) QID to the tag is used to generate an IIIF manifest URL.  More information on QID use can be found in the [Wikidata](#wikidata) section.
-- `options` (_IIIF image options_):  The _options_ attribute is used to define the [IIIF image request parameters](https://iiif.io/api/image/2.1/#image-request-parameters) for an image.  This attribute is most commonly used to define a coordinates for displaying an image region.    
-- `right` ("_true_" or "_false_"):  Position the viewer in the right half of the viewport and scale the width proportionally. Text will wrap around the viewer unless the _sticky_ attribute is included.
-- `seq` (_image sequence number_):  A number defining the image to use in a multi-image manifest.  If not specified the default value is _1_.
-- `sticky` ("_true_" or "_false_"):  The _sticky_ attribute causes the viewer to "stick" to the top of the viewing area when the essay text is scrolled.  The viewer will stick in position until all content in the enclosing section has scrolled through the viewing area.
-- `width` (_requested viewer width in pixels or as a percentage of viewing area width_):  A requested size for the  viewer width.  The default behavior is to use the full width of the available window.
-- `zoom-on-scroll` ("_true_" or "_false_"):  Specifies whether the viewer will zoom the image when a scroll gesture is performed in the image viewer.  This is inhibited by default.
+- **alt** (_text string_):  The text to use in the _alt_ tag used by screen readers.  If not provided an _alt_ tag is automatically generated from the manifest label property.
+- **compare** ("_true_" or "_false_"):  The _compare_ attribute is used compare 2 images.  In compare mode the 2 images are stacked (one is overlaid on the other) and a slider is used to show or hide portions of the bottom image.  The compared images cannot be zoomed or panned but one or both may  be cropped to align the images for comparison.
+- **fit** ("_cover_" or "_contain_"):  The _fit_ attribute controls the display of an image in the viewer viewport.  In the default mode (_contain_) the entire image is show with letter-boxing applied to the top and bottom or left and right when the image aspect ratio differs from the viewers.  When the value _cover_ is used the entire viewport is filled and the displayed portion of the image is cropped as needed to fit.
+- **full** ("_true_" or "_false_"):  Use the fill width of browser viewport for the image.  Scale the image height proportional to the source image.  By default the image will be auto-sized such that its height is not more than 40% of the viewport height.
+- **grid** ("_true_" or "_false_"):  Displays multiple images in a responsive grid. When clicked the images will create a popup window with full deep zoom and panning enabled. 
+- **height** (_requested viewer height in pixels or as a percentage of viewing area width_):  A requested size for the  viewer height.  The default behavior is to use the full width of the available window and scale the viewer height to retain the aspect ratio of the source item (image or video).
+- **left** ("_true_" or "_false_"):  Position the viewer in the left half of the viewport and scale the width proportionally.  Text will wrap around the viewer unless the _sticky_ attribute is included.
+- **manifest** (_IIIF manifest URL_) :  The URL to the IIIF manifest for the item to display in the viewer.  This attribute is omitted when multiple using the viewer in multi-image mode.  This attribute may also be omitted in single image mode when QIDs are in scope.  When a _manifest_ attribute is not specified the most relevant (closest) QID to the tag is used to generate an IIIF manifest URL.  More information on QID use can be found in the [Wikidata](#wikidata) section.
+- **options** (_IIIF image options_):  The _options_ attribute is used to define the [IIIF image request parameters](https://iiif.io/api/image/2.1/#image-request-parameters) for an image.  This attribute is most commonly used to define a coordinates for displaying an image region.    
+- **right** ("_true_" or "_false_"):  Position the viewer in the right half of the viewport and scale the width proportionally. Text will wrap around the viewer unless the _sticky_ attribute is included.
+- **seq** (_image sequence number_):  A number defining the image to use in a multi-image manifest.  If not specified the default value is _1_.
+- **sticky** ("_true_" or "_false_"):  The _sticky_ attribute causes the viewer to "stick" to the top of the viewing area when the essay text is scrolled.  The viewer will stick in position until all content in the enclosing section has scrolled through the viewing area.
+- **width** (_requested viewer width in pixels or as a percentage of viewing area width_):  A requested size for the  viewer width.  The default behavior is to use the full width of the available window.
+- **zoom-on-scroll** ("_true_" or "_false_"):  Specifies whether the viewer will zoom the image when a scroll gesture is performed in the image viewer.  This is inhibited by default.
 
 ### Multiple images mode
 
@@ -162,8 +162,8 @@ The `.ve-meta` tag is used to define metadata attributes for the page.  Defining
 
 ### .ve-meta Attributes
 
-- `title` (_text string_):  A short title for the page.  This title will be added to the browser window or tab.  When indexed by search engines this title will also appear in the search results item.   
-- `description` (_text string_):  A short description of the page.  When indexed by search engines this description will appear in the search results item. 
+- **title** (_text string_):  A short title for the page.  This title will be added to the browser window or tab.  When indexed by search engines this title will also appear in the search results item.   
+- **description** (_text string_):  A short description of the page.  When indexed by search engines this description will appear in the search results item. 
 
 ###  Example
 
@@ -205,8 +205,8 @@ In the example above the text `dolor` is marked and associated with the attribut
 
 The image zoom behavior causes the target image to zoom to a specific region of an image.  The region of interest is specified using a set of 4 coordinates defining a rectangular bounding box.  The coordinates are the `x position`, `y-position`, `width`, and `height`.  The coordinate values may be defined as absolute pixel values or as a percentage relative to the full size of the source image.[^iiif-region]
 
-- `x,y,w,h`: The region of the full image to be returned is specified in terms of absolute pixel values. The value of x represents the number of pixels from the 0 position on the horizontal axis. The value of y represents the number of pixels from the 0 position on the vertical axis. Thus the x,y position 0,0 is the upper left-most pixel of the image. w represents the width of the region and h represents the height of the region in pixels.
-- `pct:x,y,w,h`: The region to be returned is specified as a sequence of percentages of the full image’s dimensions, as reported in the image information document. Thus, x represents the number of pixels from the 0 position on the horizontal axis, calculated as a percentage of the reported width. w represents the width of the region, also calculated as a percentage of the reported width. The same applies to y and h respectively. These may be floating point numbers.
+- **x,y,w,h**: The region of the full image to be returned is specified in terms of absolute pixel values. The value of x represents the number of pixels from the 0 position on the horizontal axis. The value of y represents the number of pixels from the 0 position on the vertical axis. Thus the x,y position 0,0 is the upper left-most pixel of the image. w represents the width of the region and h represents the height of the region in pixels.
+- **pct:x,y,w,h**: The region to be returned is specified as a sequence of percentages of the full image’s dimensions, as reported in the image information document. Thus, x represents the number of pixels from the 0 position on the horizontal axis, calculated as a percentage of the reported width. w represents the width of the region, also calculated as a percentage of the reported width. The same applies to y and h respectively. These may be floating point numbers.
 
 ### [⇧](#top) Play video or audio segment {#play}
 
