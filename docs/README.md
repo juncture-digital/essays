@@ -203,15 +203,26 @@ In the example above the text `dolor` is marked and associated with the attribut
 
 ### [⇧](#top) Image zoom {#zoom}
 
-The image zoom behavior causes the target image to zoom to a specific region of an image.  The region of interest is specified using a set of 4 coordinates defining a rectangular bounding box.  The coordinates are the `x position`, `y-position`, `width`, and `height`.  The coordinate values may be defined as absolute pixel values or as a percentage relative to the full size of the source image.[^iiif-region]
+The image zoom behavior causes the `.ve-media` viewer to zoom to a specific region of an image.  The region of interest is specified using a set of 4 coordinates defining a rectangular bounding box.  The coordinates are the `x-position`, `y-position`, `width`, and `height`.  The coordinate values may be defined as absolute pixel values or as a percentage relative to the full size of the source image.[^iiif-region]
 
 - **x,y,w,h**: The region of the full image to be returned is specified in terms of absolute pixel values. The value of x represents the number of pixels from the 0 position on the horizontal axis. The value of y represents the number of pixels from the 0 position on the vertical axis. Thus the x,y position 0,0 is the upper left-most pixel of the image. w represents the width of the region and h represents the height of the region in pixels.
 - **pct:x,y,w,h**: The region to be returned is specified as a sequence of percentages of the full image’s dimensions, as reported in the image information document. Thus, x represents the number of pixels from the 0 position on the horizontal axis, calculated as a percentage of the reported width. w represents the width of the region, also calculated as a percentage of the reported width. The same applies to y and h respectively. These may be floating point numbers.
 
 ### [⇧](#top) Play video or audio segment {#play}
 
+The play behavior causes the `.ve-media` viewer to play a video or audio clip starting at a specified time.  A second time value may optionally be used to define a stop time.  If a stop time is not provided the clip will play from the start time to the end.  The values for the start and end times are specified in **hh:mm:ss** notation.  The **hh** and **mm** values are optional.  For example:
+
+- **30**: `==start playing 30 seconds into clip=={30}`
+- **1:30**: `==start playing 90 seconds into clip=={1:30}`
+- **15:00**: `==start playing 15 minutes into clip=={15:00}`
+- **1:10:00**: `==start playing 1 hour and 10 minutes into clip=={1:10:00}`
+- **5:30,6:00**: `==play from 5:30 to 6:00=={5:30,6:00}`
+
 ### [⇧](#top) Show entity info-box on hover {#info-box}
 
+This behavior causes an entity information popup to be display when the cursor hovers over marked text associated with an entity (person, place, etc) identifier.  Juncture uses [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) for entity data.  Wikidata is a free and open knowledge base that can be read and edited by both humans and machines.  Wikidata acts as central storage for the structured data of its Wikimedia sister projects including Wikipedia, Wikivoyage, Wiktionary, Wikisource, and others.  The textual information displayed in a Juncture entity popup is retrieved from Wikidata and Wikipedia.  When available, thumbnail images are retrieved from Wikimedia Commons.
+
+Wikidata entity identifiers (`Q` IDs) can be obtained by querying Wikidata or by visiting the Wikipedia page associated with the entity of interest.  When viewing a Wikipedia page the Wikidata link in the left navigation panel can be used to easily obtain the entity `QID`.  Clicking on the Wikidata link will open the associated Wikidata page where the QID can be copied from the title displayed at the top of the page.  For example, the [Wikidata page for Vincent van Gogh](https://www.wikidata.org/wiki/Q5582) reveals the QID `Q5582`.  Adding this QID to a marked text segment will cause an entity popup to appear when hovering over the text.
 
 # [⇧](#top) Tools {#tools}
 
