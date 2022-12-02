@@ -27,7 +27,9 @@
 
 - **[How To's](#how-tos)**
     - [Marking text for interactions](#marking-text)
-    - [Creating a **zoom to** interaction](#zoom-to)
+        - [Creating a **zoom to** interaction](#zoom-to)
+        - [Creating a **play at** interaction](#play-at)
+        - [Creating an **entity info popup** interaction](#entity-popup)
 
 - **[Tools](#tools)**
     - [Editor](#editor)
@@ -208,7 +210,7 @@ The image zoom behavior causes the `.ve-media` viewer to zoom to a specific regi
 - **x,y,w,h**: The region of the full image to be returned is specified in terms of absolute pixel values. The value of x represents the number of pixels from the 0 position on the horizontal axis. The value of y represents the number of pixels from the 0 position on the vertical axis. Thus the x,y position 0,0 is the upper left-most pixel of the image. w represents the width of the region and h represents the height of the region in pixels.
 - **pct:x,y,w,h**: The region to be returned is specified as a sequence of percentages of the full image’s dimensions, as reported in the image information document. Thus, x represents the number of pixels from the 0 position on the horizontal axis, calculated as a percentage of the reported width. w represents the width of the region, also calculated as a percentage of the reported width. The same applies to y and h respectively. These may be floating point numbers.
 
-### [⇧](#top) Play video or audio segment {#play}
+### [⇧](#top) Play video or audio segment {#play-at}
 
 The play behavior causes the `.ve-media` viewer to play a video or audio clip starting at a specified time.  A second time value may optionally be used to define a stop time.  If a stop time is not provided the clip will play from the start time to the end.  The values for the start and end times are specified in **hh:mm:ss** notation.  The **hh** and **mm** values are optional.  For example:
 
@@ -218,7 +220,7 @@ The play behavior causes the `.ve-media` viewer to play a video or audio clip st
 - **1:10:00**: `==start playing 1 hour and 10 minutes into clip=={1:10:00}`
 - **5:30,6:00**: `==play from 5:30 to 6:00=={5:30,6:00}`
 
-### [⇧](#top) Show entity info-box on hover {#info-box}
+### [⇧](#top) Show entity info-box on hover {#entity-popup}
 
 This behavior causes an entity information popup to be display when the cursor hovers over marked text associated with an entity (person, place, etc) identifier.  Juncture uses [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) for entity data.  Wikidata is a free and open knowledge base that can be read and edited by both humans and machines.  Wikidata acts as central storage for the structured data of its Wikimedia sister projects including Wikipedia, Wikivoyage, Wiktionary, Wikisource, and others.  The textual information displayed in a Juncture entity popup is retrieved from Wikidata and Wikipedia.  When available, thumbnail images are retrieved from Wikimedia Commons.
 
