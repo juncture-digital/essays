@@ -100,7 +100,7 @@ The `.ve-map` tag creates a map viewer that displays a base map with optional ma
 
 ## [⇧](#top) .ve-media {#ve-media}
 
-The `.ve-media` tag is the most commonly used essay tag.  The tag creates an IIIF viewer that is able to display images, video, or audio.
+The `.ve-media` tag is the most commonly used essay tag.  The tag creates an IIIF viewer that is able to display images, video, and audio.  The _.ve-media_ viewer encapsulates the [Mirador](https://projectmirador.org/) ==IIIF=={Q22682088} viewer.
 
 ### .ve-media Attributes
 
