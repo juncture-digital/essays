@@ -100,7 +100,7 @@ The `.ve-map` tag creates a map viewer that displays a base map with optional ma
 
 The `.ve-media` tag is the most commonly used essay tag.  The tag creates an IIIF viewer that is able to display images, video, or audio.
 
-### .ve-image Attributes
+### .ve-media Attributes
 
 - `alt` (_text string_):  The text to use in the _alt_ tag used by screen readers.  If not provided an _alt_ tag is automatically generated from the manifest label property.
 - `compare` ("_true_" or "_false_"):  The _compare_ attribute is used compare 2 images.  In compare mode the 2 images are stacked (one is overlaid on the other) and a slider is used to show or hide portions of the bottom image.  The compared images cannot be zoomed or panned but one or both may  be cropped to align the images for comparison.
@@ -191,11 +191,26 @@ Essay text is "marked" by surrounding the applicable text with double equal sign
 Lorem ipsum ==dolor=={100,100,400,400} sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
 ```
 
-In the example above the text `dolor` is marked and associated with the attribute `100,100,400,400`.  This has the effect of highlighting the `dolor` text in the rendered essay and creating a `zoom to` interaction when the text is selected (clicked or tapped).  The `zoom to` interaction causes the closest image zoom to the region specified by the coordinates in the  attribute.  More information about the `zoom to` interaction, including how to define the coordinates, is provided below.
+In the example above the text `dolor` is marked and associated with the attribute `100,100,400,400`.  This has the effect of highlighting the `dolor` text in the rendered essay and creating a `zoom` interaction when the text is selected (clicked or tapped).  The `zoom` interaction causes the closest image to zoom into the region specified by the coordinates in the  attribute.
 
-## [⇧](#top) Zoom To {#zoom-to}
+## [⇧](#top) Marked Text Behaviors {#marked-text-behaviors}
 
-TODO
+[Marked text](marking-text) is used to create a essay interactions such as zooming into an image region or playing a specific segment of a video.  The text to trigger the interaction is marked by surrounding a word or phrase with double equal signs and enclosing a value for the desired behavior in brace characters (`{`,`}`).  Below are a few examples of some commonly used marked text behaviors.  These are explained in more detail the following sections.
+
+- **Image region zoom** - `==click to zoom=={100,100,400,400}`
+- **Play multimedia (video or audio) segment** - `==click to play=={1:30,1:45}`
+- **Show entity information popup** - `==Vincent van Gogh=={Q5582}`
+
+### [⇧](#top) Image zoom {#zoom}
+
+The image zoom behavior causes the target image to zoom to a specific region of an image.  The region of interest is specified using a set of 4 coordinates defining a rectangular bounding box.  The coordinates are the `x position`, `y-position`, `width`, and `height`.  The coordinate values may be defined as absolute pixel values or as a percentage relative to the full size of the source image.[^iiif-region]
+
+- `x,y,w,h`: The region of the full image to be returned is specified in terms of absolute pixel values. The value of x represents the number of pixels from the 0 position on the horizontal axis. The value of y represents the number of pixels from the 0 position on the vertical axis. Thus the x,y position 0,0 is the upper left-most pixel of the image. w represents the width of the region and h represents the height of the region in pixels.
+- `pct:x,y,w,h`: The region to be returned is specified as a sequence of percentages of the full image’s dimensions, as reported in the image information document. Thus, x represents the number of pixels from the 0 position on the horizontal axis, calculated as a percentage of the reported width. w represents the width of the region, also calculated as a percentage of the reported width. The same applies to y and h respectively. These may be floating point numbers.
+
+### [⇧](#top) Play video or audio segment {#play}
+
+### [⇧](#top) Show entity info-box on hover {#info-box}
 
 
 # [⇧](#top) Tools {#tools}
@@ -230,3 +245,5 @@ TODO
 # [⇧](#top) Resources {#resources}
 
 ## [⇧](#top) Finding IIIF Images {#finding-iiif}
+
+[^iiif-region]: [IIIF Image API 2.1.1 Region Definition](https://iiif.io/api/image/2.1/#region)
