@@ -111,7 +111,7 @@ The `.ve-media` tag is the most commonly used essay tag.  The tag creates an III
 
 - **alt** (_text string_):  The text to use in the _alt_ tag used by screen readers.  If not provided an _alt_ tag is automatically generated from the manifest label property.
 - **compare** ("_true_" or "_false_"):  The _compare_ attribute is used compare 2 images.  In compare mode the 2 images are stacked (one is overlaid on the other) and a slider is used to show or hide portions of the bottom image.  The compared images cannot be zoomed or panned but one or both may  be cropped to align the images for comparison.
-- **fit** ("_cover_" or "_contain_"):  The _fit_ attribute controls the display of an image in the viewer viewport.  In the default mode (_contain_) the entire image is show with letter-boxing applied to the top and bottom or left and right when the image aspect ratio differs from the viewers.  When the value _cover_ is used the entire viewport is filled and the displayed portion of the image is cropped as needed to fit.
+- **fit** ("_cover_" or "_contain_"):  The _fit_ attribute controls the display of an image in the viewer viewport.  In the default mode (_contain_) the entire image is shown with letter-boxing applied to the top and bottom or left and right when the image aspect ratio differs from the viewers.  When the value _cover_ is used the entire viewport is filled and the displayed portion of the image is cropped as needed to fit.
 - **full** ("_true_" or "_false_"):  Use the fill width of browser viewport for the image.  Scale the image height proportional to the source image.  By default the image will be auto-sized such that its height is not more than 40% of the viewport height.
 - **grid** ("_true_" or "_false_"):  Displays multiple images in a responsive grid. When clicked the images will create a popup window with full deep zoom and panning enabled. 
 - **height** (_requested viewer height in pixels or as a percentage of viewing area width_):  A requested size for the  viewer height.  The default behavior is to use the full width of the available window and scale the viewer height to retain the aspect ratio of the source item (image or video).
@@ -224,9 +224,15 @@ or
 .ve-media wc:Sunflower.jpg width=800px
 ```
 
-When setting only the width or the height on a _.ve-media_ or _.ve-video_ component the non-specified dimension will be calculated to retain the aspect ration of the source item.  If both a width and height is set on an image (using the _.ve-media_ component) and the resulting aspect ratio is different than the original items, the image `fit` will be set to `cover` unless exlicitly set to `contain`.
+When setting only the width or the height on a _.ve-media_ or _.ve-video_ component the non-specified dimension will be calculated to retain the aspect ratio of the source item.  
+
+If both a width and height is set on an image (using the _.ve-media_ component) and the resulting aspect ratio is different than the original items, the image `fit` will be set to `cover` unless exlicitly set to `contain`.
+
+The `fit` attribute controls the display of an image in the viewer viewport. In the default mode (_contain_) the entire image is shown with letter-boxing applied to the top and bottom or left and right when the image aspect ratio differs from the viewers. When the value _cover_ is used the entire viewport is filled and the displayed portion of the image is cropped as needed to fit.
 
 ### Sticky
+
+The _sticky_ attribute can be added to a component to "stick" it to the top of the essay when scrolling a section of text that is longer than can be viewed in the visible portion of the window.  This is useful when describing portions of an image or cueing video clips from text.
 
 # [⇧](#top) How To's {#how-tos}
 
