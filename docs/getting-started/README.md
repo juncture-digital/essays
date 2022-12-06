@@ -20,7 +20,7 @@ If you don't already have a Github account one can be created at [https://github
 
 Logging into Github from Juncture authorizes Juncture to interact with your Github repository content from the Juncture Editor tool.  Note that this is an optional step as Github files may be edited directly in the Github web interface or by using any number of client applications running on your local computer. This getting start guide assumes the Juncture Editor is used.  The ==video below=={0} shows the basic process for logging into Github from Juncture.
 
-.ve-media gh:juncture-digital/media/videos/GitHub_Login.mp4 right
+.ve-media gh:juncture-digital/media/videos/Login.mp4 right
 
 1. ==Select "Login" from the Juncture menu=={0,3}
 2. ==Login to Github=={4,7} with your Github username and password.
@@ -48,7 +48,31 @@ This section provides an overview of the Juncture editor sections.  Video clips 
 
 ## Creating a simple essay
 
-In this section we will create a simple visual essay.  This essay will include a few commonly used Juncture features:
-1. A header with a title and banner image
-2. Text narrative with footnotes
-3. A high resolution image
+### Create new essay file
+
+.ve-media gh:juncture-digital/media/videos/New_Essay.mp4 right
+
+### Add text
+
+.ve-media gh:juncture-digital/media/videos/Add_Text.mp4
+
+### Format text
+
+.ve-media gh:juncture-digital/media/videos/Text_Formatting.mp4 right
+
+- ==Add top-level section heading=={2,13}
+- ==Format second-level section headings=={14,28}
+- ==Format block quote=={29,32}
+- ==Format list=={35,48}
+
+### Add footnote
+
+.ve-media gh:juncture-digital/media/videos/Add_Footnote.mp4 right
+
+### Add image
+
+.ve-media gh:juncture-digital/media/videos/Add_Image.mp4
+
+In this example an image is added to the essay by ==dragging the image from the Wikipedia page=={0,3} to the Juncture editor window.  The image is dropped at the desired position in the essay text.  When adding an image using drag-n-drop a _.ve-media_ tag with the IIIF manifest URL (short form) is automatically added to the essay text.  Juncture supports the addition of media from a number of hosting sites (incouyding Wiikipedia ans Wikimedia Commons) using drag-n-drop.  For a complete list refer to **[TODO]()**.
+
+The default behavior for the _.ve-media_ viewer is to display the image the full width of the essay.  For this example we will position the image in the right half of the essay and allow the section text to wrap around the image if needed.  Repositioning the image is accomplished by adding the `right` attribute to the _.ve-media_ tag as can be ==seen in this clip=={8}.
