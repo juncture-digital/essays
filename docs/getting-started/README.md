@@ -116,3 +116,27 @@ For this interaction the bounding-box coordinates of the image region of interes
 After the coordinates have been copied they can be associated with the relevant text in the editor (when in edit mode).  This can accomplished manually or by selecting the text and clicking on the code icon ('</>') in the Markdown toolbar.  The linked text is enclosed with double equal signs and the coordinates are added as a value in the attributes attached to the linked text.
 
 When in preview mode,  notice that the marked text is now clicakble.  Clicking on the text will cause the media viewer to zoom in on the image region of interest.
+
+### Add media viewer for comparing two images
+
+The _.ve-media_ viewer has two modes for viewing multiple images, `compare` and `grid` mode.  In `compare` mode 2 images are stacked and a slider is used to show/hide relevant sections of each image.  To use the _.ve-media_ viewer in one of the multi-image modes the IIIF manifest URLs for each image are defined in an indented Markdown list following the _.ve-media_ tag.  The mode is specified by adding the _compare_ or _grid_ attribute to the tag.  
+
+.ve-media gh:juncture-digital/media/videos/Add_Image_Compare.mp4
+
+In this sample essay both the viewer mode attribute (_compare_) and a positioning attribute (_right_) are specified.  The 2 images to be compared are defined in the Markdown list immediately following the tag.  In this essay one of van Gogh's sketches and first version finished painting are compared.  The image list can be created manually or using the drag-n-drop gesture used to add the first image.   When using the drag-n-drop approach the second image is dropped over the _.ve-media_ tag created by the drag-n-drop of the first image.
+
+### Add media viewer for displaying the 3 paintings
+
+In this portion of the tutorial a _.ve-media_ viewer instance is added in _grid_ mode to display the 3 versions of the painting side-by-side.  Each painting is displayed as a clickable thumbnail.  When clicked, a popup is displayed with image in a full media viewer enabling deep-zoom and panning of the painting image.
+
+.ve-media gh:juncture-digital/media/videos/Add_Image_Grid.mp4
+
+Similar to how the _.ve-media_ tag was created for comparing the original painting and sketch, the image list in _grid_ mode is created by dragging and dropping the image for each of the painting versions into the Juncture editor window.
+
+### Add essay header with title and banner image
+
+Our last addition to the sample essay is the addition of a header for the displaying the essay title and subtitle.  In this header we are also including a banner image that is obtained from the Wikimedia Commons site.
+
+.ve-media gh:juncture-digital/media/videos/Add_Header.mp4
+
+The _.ve-header_ tag provides a few configuration options, including the definition of a navigation menu with an email contact form.  That is not used in this example, but we do configure the header title/nav bar to "stick" to the top of the browser window when content is scrolled.
