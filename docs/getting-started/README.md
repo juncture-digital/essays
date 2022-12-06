@@ -46,7 +46,17 @@ This section provides an overview of the Juncture editor sections.  Video clips 
 5. ==The main editor window=={0,0,1081,1602|9d0bf556}
 6. A sample ==Viewer tag=={58,148,626,927|2ca0f199}
 
-## Creating a simple essay
+## Creating an example essay
+
+In this portion of the tutorial we will create an essay on Vincent van Gogh's "Bedroom in Arles" paintings.  The essay will include a number of Juncture features including:
+- Use of a footnote to reference the source of the text used in the essay
+- Simple Markdown formatting of section headings, quoted text, and a list
+- The use of a high resolution image in an embedded media viewer
+- Use the _.ve-media_ viewer in _compare_ mode to compare a painting and a sketch
+- Use the _.ve-media_ viewer in _grid_ mode to display all 3 versions of the paintings (with full resolution popups)
+- The use of a text interaction to zoom in on a region of the image referenced from the text
+- The use of information popups that are triggered when the cursor is positioned over the relevant text
+- The addition of an essay header with a title and banner image
 
 ### Create new essay file
 
