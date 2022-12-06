@@ -80,14 +80,22 @@ In this example we will use text from the _Bedroom in Arles_ Wikipedia article. 
 
 .ve-media gh:juncture-digital/media/videos/Text_Formatting.mp4 right
 
-- ==Add top-level section heading=={2,13}
-- ==Format second-level section headings=={14,28}
-- ==Format block quote=={29,32}
-- ==Format list=={35,48}
+After adding the plain text some formatting is applied.
 
-### Add footnote
+- ==Add top-level section heading=={2,13} - A top-level section heading is defined by adding a single hash character to the start of the line with the heading text.
+- ==Format second-level section headings=={14,28} - Second-level sections and headings are similarily defined using double hash characters.
+- ==Format block quote=={29,32} - A block qoute is defined by adding a greater-than symbol (`>`) at the beginning of the quoted passage.
+- ==Format list=={35,48} - The _Provenance_ section is an unordered list of text.  This is formatted by adding a dash (`-`) and space character at the start of the line for each list item.
+
+### Add citation
 
 .ve-media gh:juncture-digital/media/videos/Add_Footnote.mp4 right
+
+Here we add a citation to our essay to identify the source of the text used in the essay.  Normally a separate citation is used for each distinct instance of cited text.  However, in our essay all of the text has been copied and thus will be cited using a blanket citation that is added at the beginning of the essay.   A citation is made by appending a citation reference to the cited text.  This is then used to connect to citation text located in a footnote (or endnote) section.
+
+In Juncture, a citation reference consists of an ID enclosed in brackets.  The citation ID is an alphanumeric string prefixed with the caret symbol, for example `[^1]`.  The citation reference is also added to the end of the essay where a references section will be included in the rendered essay.  The citation reference used in the references section includes a colon (`:`) suffix and a space between the citation reference and start of the reference text, for example `[^1]: Reference text...`
+
+Our blanket citation at the start of the essay is also italicized (by enclosing text with underscore characters) and is separated from the essay text with a horizontal rule.  This is only done for stylistic purposes to demonstrate some Markdown formatting.
 
 ### Add image
 
