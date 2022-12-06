@@ -109,4 +109,10 @@ The default behavior for the _.ve-media_ viewer is to display the image the full
 
 .ve-media gh:juncture-digital/media/videos/Add_Image_Zoom_Interaction.mp4 right
 
-A key feature of Juncture is the ability to create interactions between the text narrative and visualizations.  In this essay we will add an interaction that causes the media viewer to zoom in on a region of the image mentioned in the essay text.  Specifically, we will link a refe
+A key feature of Juncture is its ability to create interactions between the text narrative and visualizations.  In this essay we will add an interaction that causes the media viewer to zoom in on a region of the image mentioned in the essay text.  Specifically, we will link a mention of wall pictures to a zoomed-in close-up of one of the pictures above the bed in the painting.
+
+For this interaction the bounding-box coordinates of the image region of interest must be obtained.  This is accomplished by zooming and panning in the media viewer while the editor is in preview mode.  After the viewer has been positioned at the right location hovering the cursor over the bottom right corner of the media viewer will reveal the bounding-box coordinates.  Clicking on the coordinates copies them to the clipboard.
+
+After the coordinates have been copied they can be associated with the relevant text in the editor (when in edit mode).  This can accomplished manually or by selecting the text and clicking on the code icon ('</>') in the Markdown toolbar.  The linked text is enclosed with double equal signs and the coordinates are added as a value in the attributes attached to the linked text.
+
+When in preview mode,  notice that the marked text is now clicakble.  Clicking on the text will cause the media viewer to zoom in on the image region of interest.
