@@ -62,7 +62,17 @@ In this portion of the tutorial we will create an essay on Vincent van Gogh's "B
 
 .ve-media gh:juncture-digital/media/videos/New_Essay.mp4 right
 
+The first step in the creation of a new essay is to create a new file for the essay text.  A new folder is created in the Github repository for the essay files.  The primary (and in many cases, the only) file needed for an essay is a Markdown file for the essay text.  Note that Juncture uses the Github convention of naming the primary Markdown file in a folder as `README.md`.
+
+A new folder is created by selecting the parent folder from the Gitub content selection tool at the top of the editor and then clicking on the add item icon (a shaded circle with a plus sign).  A dialog is then displayed for entering the new folder (essay) name.
+
+For our example the new folder is named `bedroom-in-arles`.  Since the folder name becomes part of the stable URL for the generated essay, the name should follow the web convention of lowercase characters, numbers, and dash characters (`-`,  used for word separators).
+
+After entering the name of the folder to be created and selecting `Add`, the folder and `README.md` file is created.  The Juncture editor opens the `README.md` file for editing.
+
 ### Add text
+
+In this example we will use text from the _Bedroom in Arles_ Wikipedia article.  In this video clip text is copied from various sections of the Wikipedia article and pasted into the Juncture editor window.  ==The result of this copy and paste sequence=={1:14} is the addiiton of unformatted text in our essay.  In the next portion of the tutorial we will perform some light formatting using some Markdown tags.
 
 .ve-media gh:juncture-digital/media/videos/Add_Text.mp4
 
