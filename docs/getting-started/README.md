@@ -70,13 +70,13 @@ For our example the new folder is named `bedroom-in-arles`.  Since the folder na
 
 After entering the name of the folder to be created and selecting `Add`, the folder and `README.md` file is created.  The Juncture editor opens the `README.md` file for editing.
 
-### Add text
+### Add essay text
 
 In this example we will use text from the _Bedroom in Arles_ Wikipedia article.  In this video clip text is copied from various sections of the Wikipedia article and pasted into the Juncture editor window.  ==The result of this copy and paste sequence=={1:14} is the addiiton of unformatted text in our essay.  In the next portion of the tutorial we will perform some light formatting using some Markdown tags.
 
 .ve-media gh:juncture-digital/media/videos/Add_Text.mp4
 
-### Format text
+### Format essay text
 
 .ve-media gh:juncture-digital/media/videos/Text_Formatting.mp4 right
 
@@ -104,3 +104,9 @@ Our blanket citation at the start of the essay is also italicized (by enclosing 
 In this example an image is added to the essay by ==dragging the image from the Wikipedia page=={0,3} to the Juncture editor window.  The image is dropped at the desired position in the essay text.  When adding an image using drag-n-drop a _.ve-media_ tag with the IIIF manifest URL (short form) is automatically added to the essay text.  Juncture supports the addition of media from a number of hosting sites (incouyding Wiikipedia ans Wikimedia Commons) using drag-n-drop.  For a complete list refer to **[TODO]()**.
 
 The default behavior for the _.ve-media_ viewer is to display the image the full width of the essay.  For this example we will position the image in the right half of the essay and allow the section text to wrap around the image if needed.  Repositioning the image is accomplished by adding the `right` attribute to the _.ve-media_ tag as can be ==seen in this clip=={8}.
+
+### Add image zoom interaction
+
+.ve-media gh:juncture-digital/media/videos/Add_Image_Zoom_Interaction.mp4 right
+
+A key feature of Juncture is the ability to create interactions between the text narrative and visualizations.  In this essay we will add an interaction that causes the media viewer to zoom in on a region of the image mentioned in the essay text.  Specifically, we will link a refe
