@@ -4,7 +4,7 @@
 
 # Getting Started Guide
 
-This document provides step-by-step instructions for creating a Juncture essay.
+This tutorial provides step-by-step instructions for creating a Juncture essay.  The created essay will incorporate a number of Juncture features including the use of an embedded media viewer for viewing a high-resolution image and the use of the media viewer for displaying an image grid and comparing two images.  The tutorial provides detailed instructions with accompanying videos and/or interactive images for each step.
 
 ## Sign-up for Github account
 
@@ -16,7 +16,7 @@ Juncture users have the option of manually creating and updating essay source fi
 
 If you don't already have a Github account one can be created at [https://github.com/signup](https://github.com/signup)
 
-## Login with Github
+## Login with Github and open Juncture editor
 
 Logging into Github from Juncture authorizes Juncture to interact with your Github repository content from the editor.  Note that this is an optional step as Github files may be edited directly in the Github web interface or by using any number of client applications running on your local computer. This getting started guide assumes the Juncture Editor is used.  The ==video below=={0} shows the basic process for logging into Github from Juncture.
 
@@ -54,11 +54,11 @@ In this portion of the tutorial we will create an essay on Vincent van Gogh's ==
 - [Some basic Markdown formatting](#simple-formatting), including the creation and formatting of section headings, quoted text, and a list
 - [Adding a citation](#add-citation) (footnote) to reference the source of the text used in the essay
 - [Adding a high resolution image](#add-image) in an embedded media viewer
-- [Use media viewer to in compare mode](#add-image-compare) to compare the first version of the "Bedroom in Arles" painting and an early sketch 
-- [Use media viewer to in grid mode](#add-image-grid) to display all 3 versions of the paintings with full resolution popups
-- [Create a text interaction to zoom](#create-zoomto) in on a region of an image referenced from the text
-- [Create an information popup](#create-infobox) that is opened when the cursor is positioned over the relevant text
-- [Add an essay header](#add-essay-header) with a title and banner image
+- [Using the media viewer in compare mode](#add-image-compare) to compare the first version of the "Bedroom in Arles" painting and an early sketch 
+- [Using the media viewer in grid mode](#add-image-grid) to display all 3 versions of the paintings with full resolution popups
+- [Creating a text interaction to zoom](#create-zoomto) in on a region of an image referenced from the text
+- [Creating an information popup](#create-infobox) that is opened when the cursor is positioned over the relevant text
+- [Adding an essay header](#add-essay-header) with a title, subtitle and banner image
 
 ### Opening a new essay file {#new-essay}
 
