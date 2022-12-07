@@ -168,6 +168,8 @@ After a QID has been found for the text to be linked to the information box, the
 this snippet creates an information popup for ==Vincent van Gogh=={Q5582} by wrapping the text and associating it with the Wikidata QID.
 ```
 
+.ve-media gh:juncture-digital/media/videos/Add_Entity_Infobox.mp4 width=80%
+
 ### [⇧](#create-essay) Add essay header with title and banner image {#add-essay-header}
 
 Our last addition to the sample essay is the addition of a header for the displaying the essay title and subtitle.  In this header we are also including a banner image that is obtained from the Wikimedia Commons site.
