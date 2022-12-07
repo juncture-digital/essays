@@ -2,7 +2,7 @@
 
 [⇧ Documentation Home](..)
 
-# Getting Started Guide {#top}
+# Juncture Getting Started Guide {#top}
 
 This tutorial provides step-by-step instructions for creating a Juncture essay.  The created essay will incorporate a number of Juncture features including the use of an embedded media viewer for viewing a high-resolution image and the use of the media viewer for displaying an image grid and comparing two images.  The tutorial provides detailed instructions with accompanying videos and/or interactive images for each step.  Most of the tutorial sections include a short video clip demonstrating the action that need to be accomplished.  Some sections also include links in the text for starting the video at specific points.
 
