@@ -8,13 +8,30 @@ This tutorial provides step-by-step instructions for creating a Juncture essay. 
 
 ## Prerequisites
 
-The only prerequisite for using Juncture is a Github account.  Juncture uses Github for storing and managing essay files.  **Github is a free Internet hosting service** commonly used for software development projects.  It provides features for version control and work flow management for distributed teams.
+The only true prerequisite for using Juncture is a Github account.  **Github is a free Internet hosting service** commonly used for software development projects.  It provides features for version control and work flow management for distributed teams.  Juncture uses Github for storing and managing essay files.  In addition to a Github account, some familiarity with Markdown and IIIF would be beneficial.  
+
+### Markdown
+
+Markdown is a lightweight markup language for creating formatted text using a plain-text editor.   Behind the scenes the Markdown text is converted into HTML for display in web browsers.  Juncture extends the core Markdown language with a few simple tags and conventions enabling rich essays to be created by anyone.
+
+- [Markdown Guide](https://www.markdownguide.org/)
+- [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [Short (12min) Markdown tutorial on YouTube](https://www.youtube.com/watch?v=6A5EpqqDOdk)
+
+### IIIF (International Image Interoperability Framework)
+
+IIIF is a set of open standards for delivering high-quality, attributed digital objects online at scale. It’s also an international community developing and implementing the IIIF APIs. IIIF is backed by a consortium of leading cultural institutions.  Juncture makes extensive use of IIIF, using existing IIIF resources when available, and converting non-IIIF images, videos, and audio into IIIF when used in Juncture essays.  
+
+- [IIIF Home Page](https://iiif.io/)
+- [Introduction to IIIF](https://www.youtube.com/watch?v=K4i7YlZEMGA), a presentation by Josh Hadro given at the 2021 IIIF Annual Conference
+
+### Github
 
 Juncture primarily uses Github as a file hosting service, similar to how one might use Dropbox or Google Drive. While Juncture is able to use some of the more advanced Github features (like website hosting) the primary use is  storing visual essay text files. Github content is organized into one or more repositories. Users unfamiliar with Github can think of a repository as a workspace or a collection of folders. 
 
 Juncture users have the option of manually creating and updating essay source files in Github or using the Juncture editor. When using the Juncture editor a user will not need to interact with the Github site directly as the Juncture editor will handle essay file creation and updates.
 
-### Sign-up for Github account
+#### Sign-up for Github account
 
 If you don't already have a Github account one can be created at [https://github.com/signup](https://github.com/signup)
 
@@ -51,7 +68,7 @@ This section provides an overview of the Juncture editor sections.  Video clips 
 ## Creating an essay {#create-essay}
 
 In this portion of the tutorial we will create an essay on Vincent van Gogh's =="Bedroom in Arles"=={Q724377} paintings.  The tutorial will demonstrate the use of a number of Juncture features including:
-- [Opening a new essay file](#new-essay)
+- [Creating a new essay file](#new-essay)
 - [Adding text to the essay](#adding-text)
 - [Some basic Markdown formatting](#simple-formatting), including the creation and formatting of section headings, quoted text, and a list
 - [Adding a citation](#add-citation) (footnote) to reference the source of the text used in the essay
@@ -62,7 +79,7 @@ In this portion of the tutorial we will create an essay on Vincent van Gogh's ==
 - [Creating an information popup](#create-infobox) that is opened when the cursor is positioned over the relevant text
 - [Adding an essay header](#add-essay-header) with a title, subtitle and banner image
 
-### [⇧](#create-essay) Opening a new essay file {#new-essay}
+### [⇧](#create-essay) Creating a new essay file {#new-essay}
 
 .ve-media gh:juncture-digital/media/videos/New_Essay.mp4 right
 
@@ -136,6 +153,20 @@ In this portion of the tutorial a _.ve-media_ viewer instance is added in _grid_
 .ve-media gh:juncture-digital/media/videos/Add_Image_Grid.mp4 width=80%
 
 Similar to how the _.ve-media_ tag was created for comparing the original painting and sketch, the image list in _grid_ mode is created by dragging and dropping the image for each of the painting versions into the Juncture editor window.
+
+### [⇧](#create-essay) Add an information popup {#create-infobox}
+
+Information popups are useful for providing a quick definition and overview of a term.  The information popup appears when a users cursor is positioned over the term.  Information popups are typically used to provide background on entities such as people, places, organizations, creative works, etc.  The data used in the creation of the information popup is retrieved from Wikidata and Wikipedia.  Wikidata is an open knowledge base hosted by the Wikimedia Foundation that can be read and edited by both humans and machines. Wikidata acts as the central source of common, open structured data used by Wikipedia, Wiktionary, Wikisource, and others. It is used in a variety of academic and industrial applications.
+
+Wikidata currently contains data for more than 100 million entities.  Each of these entities is associated with a unique Wikidata Identifier (or `Q` ID).  To create an information popup a term is associated with a QID obtained from Wikidata.  Finding a QID can be accomplished in a couple of ways.
+- Using the search interface on the [Wikidata home page](https://www.wikidata.org/wiki/Wikidata:Main_Page) site
+- Using general web search tools (Google, Bing, etc) to locate the Wikipedia page associated with the entity of interest and then using the Wikidata link found in the left sidebar to navigate to the associated Wikdata page.  When on a Wikidata page the QID for the entity can be found in the top header and page URL.
+
+After a QID has been found for the text to be linked to the information box, the text is wrapped with double equal signs (`==`) and the QID is added in an attribute set attached to the marked text.  For example, to create an information popup for Vincent van Gogh.
+
+```Markdown
+this snippet creates an information popup for ==Vincent van Gogh=={Q5582} by wrapping the text and associating it with the Wikidata QID.
+```
 
 ### [⇧](#create-essay) Add essay header with title and banner image {#add-essay-header}
 
