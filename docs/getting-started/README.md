@@ -4,7 +4,9 @@
 
 # Juncture Getting Started Guide {#top}
 
-This tutorial provides step-by-step instructions for creating a Juncture essay.  The created essay will incorporate a number of Juncture features including the use of an embedded media viewer for viewing a high-resolution image and the use of the media viewer for displaying an image grid and comparing two images.  The tutorial provides detailed instructions with accompanying videos and/or interactive images for each step.  Most of the tutorial sections include a short video clip demonstrating the action that need to be accomplished.  Some sections also include links in the text for starting the video at specific points.
+This tutorial provides step-by-step instructions for creating a Juncture essay.  The created essay will incorporate a number of Juncture features including the use of an embedded media viewer for viewing a high-resolution image and the use of the media viewer for displaying an image grid and comparing two images.  The tutorial provides detailed instructions with accompanying videos and/or interactive images for each step.  
+
+Most of the tutorial sections include a short video clip demonstrating the actions that need to be accomplished.  Some sections also include links in the text for starting the video at specific points.
 
 ## Prerequisites
 
@@ -79,6 +81,8 @@ In this portion of the tutorial we will create an essay on Vincent van Gogh's ==
 - [Creating an information popup](#create-infobox) that is opened when the cursor is positioned over the relevant text
 - [Adding an essay header](#add-essay-header) with a title, subtitle and banner image
 - [Sharing the essay](#save-and-share)
+
+A version of a completed essay from this tutorial can be see at [https://beta.juncture-digital.org/snagsby/essays/bedroom-in-arles](https://beta.juncture-digital.org/snagsby/essays/bedroom-in-arles)
 
 ### [⇧](#create-essay) Creating a new essay file {#new-essay}
 
