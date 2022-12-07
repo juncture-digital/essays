@@ -48,7 +48,7 @@ This section provides an overview of the Juncture editor sections.  Video clips 
 
 ## Creating an essay
 
-In this portion of the tutorial we will create an essay on Vincent van Gogh's "Bedroom in Arles" paintings.  The tutorial will demonstrate the use of a number of Juncture features including:
+In this portion of the tutorial we will create an essay on Vincent van Gogh's =="Bedroom in Arles"=={Q724377} paintings.  The tutorial will demonstrate the use of a number of Juncture features including:
 - [Opening a new essay file](#new-essay)
 - [Adding text to the essay](#adding-text)
 - [Some basic Markdown formatting](#simple-formatting), including the creation and formatting of section headings, quoted text, and a list
