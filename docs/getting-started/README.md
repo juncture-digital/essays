@@ -4,13 +4,13 @@
 
 # Getting Started Guide
 
-This document provides step-by-step instructions for creating a simple Juncture essay.
+This document provides step-by-step instructions for creating a Juncture essay.
 
 ## Sign-up for Github account
 
 A Github account is required to use Juncture.  Juncture uses Github for storing and managing content files.  **Github is a free Internet hosting service** commonly used for software development projects.  It provides features for version control and workflow management for distributed teams.
 
-For Juncture we primarly use Github as a file hosting service, similar to how one might use Dropbox or Google Drive. While Juncture is able to use some of the more advanced Github features (like website hosting) the primary use is for storing visual essay text files. Github content is organized into one or more repositories. Users unfamiliar with Github can think of a repository as a workspace, or a collection of folders. 
+For Juncture we primarly use Github as a file hosting service, similar to how one might use Dropbox or Google Drive. While Juncture is able to use some of the more advanced Github features (like website hosting) the primary use is for storing visual essay text files. Github content is organized into one or more repositories. Users unfamiliar with Github can think of a repository as a workspace or a collection of folders. 
 
 Juncture users have the option of manually creating and updating essay source files in Github or using the Juncture editor. When using the Juncture editor a user will not need to interact with the Github site directly as the Juncture editor will handle essay file creation and updates.
 
@@ -18,7 +18,7 @@ If you don't already have a Github account one can be created at [https://github
 
 ## Login with Github
 
-Logging into Github from Juncture authorizes Juncture to interact with your Github repository content from the Juncture Editor tool.  Note that this is an optional step as Github files may be edited directly in the Github web interface or by using any number of client applications running on your local computer. This getting start guide assumes the Juncture Editor is used.  The ==video below=={0} shows the basic process for logging into Github from Juncture.
+Logging into Github from Juncture authorizes Juncture to interact with your Github repository content from the editor.  Note that this is an optional step as Github files may be edited directly in the Github web interface or by using any number of client applications running on your local computer. This getting started guide assumes the Juncture Editor is used.  The ==video below=={0} shows the basic process for logging into Github from Juncture.
 
 .ve-media gh:juncture-digital/media/videos/Login.mp4 right
 
@@ -46,19 +46,21 @@ This section provides an overview of the Juncture editor sections.  Video clips 
 5. ==The main editor window=={0,0,1081,1602|9d0bf556}
 6. A sample ==Viewer tag=={58,148,626,927|2ca0f199}
 
-## Creating an example essay
+## Creating an essay
 
-In this portion of the tutorial we will create an essay on Vincent van Gogh's "Bedroom in Arles" paintings.  The essay will include a number of Juncture features including:
-- Use of a footnote to reference the source of the text used in the essay
-- Simple Markdown formatting of section headings, quoted text, and a list
-- The use of a high resolution image in an embedded media viewer
-- Use the _.ve-media_ viewer in _compare_ mode to compare a painting and a sketch
-- Use the _.ve-media_ viewer in _grid_ mode to display all 3 versions of the paintings (with full resolution popups)
-- The use of a text interaction to zoom in on a region of the image referenced from the text
-- The use of information popups that are triggered when the cursor is positioned over the relevant text
-- The addition of an essay header with a title and banner image
+In this portion of the tutorial we will create an essay on Vincent van Gogh's "Bedroom in Arles" paintings.  The tutorial will demonstrate the use of a number of Juncture features including:
+- [Opening a new essay file](#new-essay)
+- [Adding text to the essay](#adding-text)
+- [Some basic Markdown formatting](#simple-formatting), including the creation and formatting of section headings, quoted text, and a list
+- [Adding a citation](#add-citation) (footnote) to reference the source of the text used in the essay
+- [Adding a high resolution image](#add-image) in an embedded media viewer
+- [Use media viewer to in compare mode](#add-image-compare) to compare the first version of the "Bedroom in Arles" painting and an early sketch 
+- [Use media viewer to in grid mode](#add-image-grid) to display all 3 versions of the paintings with full resolution popups
+- [Create a text interaction to zoom](#create-zoomto) in on a region of an image referenced from the text
+- [Create an information popup](#create-infobox) that is opened when the cursor is positioned over the relevant text
+- [Add an essay header](#add-essay-header) with a title and banner image
 
-### Create new essay file
+### Opening a new essay file {#new-essay}
 
 .ve-media gh:juncture-digital/media/videos/New_Essay.mp4 right
 
@@ -70,13 +72,13 @@ For our example the new folder is named `bedroom-in-arles`.  Since the folder na
 
 After entering the name of the folder to be created and selecting `Add`, the folder and `README.md` file is created.  The Juncture editor opens the `README.md` file for editing.
 
-### Add essay text
+### Add essay text {#adding-text}
 
 In this example we will use text from the _Bedroom in Arles_ Wikipedia article.  In this video clip text is copied from various sections of the Wikipedia article and pasted into the Juncture editor window.  ==The result of this copy and paste sequence=={1:14} is the addiiton of unformatted text in our essay.  In the next portion of the tutorial we will perform some light formatting using some Markdown tags.
 
 .ve-media gh:juncture-digital/media/videos/Add_Text.mp4
 
-### Format essay text
+### Format essay text {#simple-formatting}
 
 .ve-media gh:juncture-digital/media/videos/Text_Formatting.mp4 right
 
@@ -87,7 +89,7 @@ After adding the plain text some formatting is applied.
 - ==Format block quote=={29,32} - A block qoute is defined by adding a greater-than symbol (`>`) at the beginning of the quoted passage.
 - ==Format list=={35,48} - The _Provenance_ section is an unordered list of text.  This is formatted by adding a dash (`-`) and space character at the start of the line for each list item.
 
-### Add citation
+### Add citation {#add-citation}
 
 .ve-media gh:juncture-digital/media/videos/Add_Footnote.mp4 right
 
@@ -97,7 +99,7 @@ In Juncture, a citation reference consists of an ID enclosed in brackets.  The c
 
 Our blanket citation at the start of the essay is also italicized (by enclosing text with underscore characters) and is separated from the essay text with a horizontal rule.  This is only done for stylistic purposes to demonstrate some Markdown formatting.
 
-### Add image
+### Add image {#add-image}
 
 .ve-media gh:juncture-digital/media/videos/Add_Image.mp4
 
@@ -105,7 +107,7 @@ In this example an image is added to the essay by ==dragging the image from the 
 
 The default behavior for the _.ve-media_ viewer is to display the image the full width of the essay.  For this example we will position the image in the right half of the essay and allow the section text to wrap around the image if needed.  Repositioning the image is accomplished by adding the `right` attribute to the _.ve-media_ tag as can be ==seen in this clip=={8}.
 
-### Add image zoom interaction
+### Add image zoom interaction {#add-zoomto}
 
 .ve-media gh:juncture-digital/media/videos/Add_Image_Zoom_Interaction.mp4 right
 
@@ -117,7 +119,7 @@ After the coordinates have been copied they can be associated with the relevant 
 
 When in preview mode,  notice that the marked text is now clicakble.  Clicking on the text will cause the media viewer to zoom in on the image region of interest.
 
-### Add media viewer for comparing two images
+### Add media viewer for comparing two images {#add-image-compare}
 
 The _.ve-media_ viewer has two modes for viewing multiple images, `compare` and `grid` mode.  In `compare` mode 2 images are stacked and a slider is used to show/hide relevant sections of each image.  To use the _.ve-media_ viewer in one of the multi-image modes the IIIF manifest URLs for each image are defined in an indented Markdown list following the _.ve-media_ tag.  The mode is specified by adding the _compare_ or _grid_ attribute to the tag.  
 
@@ -125,7 +127,7 @@ The _.ve-media_ viewer has two modes for viewing multiple images, `compare` and 
 
 In this sample essay both the viewer mode attribute (_compare_) and a positioning attribute (_right_) are specified.  The 2 images to be compared are defined in the Markdown list immediately following the tag.  In this essay one of van Gogh's sketches and first version finished painting are compared.  The image list can be created manually or using the drag-n-drop gesture used to add the first image.   When using the drag-n-drop approach the second image is dropped over the _.ve-media_ tag created by the drag-n-drop of the first image.
 
-### Add media viewer for displaying the 3 paintings
+### Add media viewer for displaying the 3 paintings {#add-image-grid}
 
 In this portion of the tutorial a _.ve-media_ viewer instance is added in _grid_ mode to display the 3 versions of the painting side-by-side.  Each painting is displayed as a clickable thumbnail.  When clicked, a popup is displayed with image in a full media viewer enabling deep-zoom and panning of the painting image.
 
@@ -133,7 +135,7 @@ In this portion of the tutorial a _.ve-media_ viewer instance is added in _grid_
 
 Similar to how the _.ve-media_ tag was created for comparing the original painting and sketch, the image list in _grid_ mode is created by dragging and dropping the image for each of the painting versions into the Juncture editor window.
 
-### Add essay header with title and banner image
+### Add essay header with title and banner image {#add-essay-header}
 
 Our last addition to the sample essay is the addition of a header for the displaying the essay title and subtitle.  In this header we are also including a banner image that is obtained from the Wikimedia Commons site.
 
