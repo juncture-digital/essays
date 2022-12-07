@@ -92,19 +92,19 @@ Juncture uses [Github](https://github.com/jstor-labs/juncture/wiki/Github-overvi
 
 ![create a visual essay](https://iiif.juncture-digital.org/thumbnail?url=https://raw.githubusercontent.com/visual-essays/media/main/images/Create_Essay.png)
 
-The first step in getting acquainted with Juncture is to create a simple visual essay in your personal Github account. Write an essay about a topic you like and follow this [visual essay quick start guide](/docs/quick-start) to visualize your essay. It will take about 10 minutes to prepare the interactive essay.
+The first step in getting acquainted with Juncture is to create a simple visual essay in your personal Github account. Write an essay about a topic you like and follow this [getting started tutorial](/docs/getting-started) to create your first essay. It will take about 10 minutes or so to create the interactive essay.
 
 ## View and Share your visual essays
 
 ![view and share visual essay](https://iiif.juncture-digital.org/thumbnail?url=https://raw.githubusercontent.com/visual-essays/media/main/images/View_and_Share.png)
 
-Each visual essay has a web address that can be used for viewing and sharing the essay.  Other URLs, including your own custom domain name can be used if you create a Juncture site. This [viewing and sharing visual essays guide](/docs/sharing-essays) provides simple instructions for accessing and sharing your visual essays.
+Each visual essay has a web address that can be used for viewing and sharing the essay.  Other URLs, including your own custom domain name can be used if you create a Juncture site.
 
 ## Create a Juncture site
 
 ![create a juncture site](https://iiif.juncture-digital.org/thumbnail?url=https://raw.githubusercontent.com/visual-essays/media/main/images/Create_Juncture_Site.png)
 
-Juncture can be used to create a full-featured website that includes multiple visual essays and other content pages. This [creating a juncture site quick start guide](/docs/juncture-site-quick-start) provides step-by-step instructions for creating a new Juncture site. 
+Juncture can be used to create a full-featured website that includes multiple visual essays and other content pages. The [Juncture documentation](/docs) provides instructions for creating a new Juncture site and optionally assigning a custom domain.
 
 .ve-footer
     - Brought to you by:  [![](https://raw.githubusercontent.com/jstor-labs/juncture-digital/c7d73fb/images/Labs_logo_knockout.svg)](https://labs.jstor.org)
