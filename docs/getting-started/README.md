@@ -2,7 +2,7 @@
 
 [⇧ Documentation Home](..)
 
-# Getting Started Guide
+# Getting Started Guide {#top}
 
 This tutorial provides step-by-step instructions for creating a Juncture essay.  The created essay will incorporate a number of Juncture features including the use of an embedded media viewer for viewing a high-resolution image and the use of the media viewer for displaying an image grid and comparing two images.  The tutorial provides detailed instructions with accompanying videos and/or interactive images for each step.
 
@@ -46,7 +46,7 @@ This section provides an overview of the Juncture editor sections.  Video clips 
 5. ==The main editor window=={0,0,1081,1602|9d0bf556}
 6. A sample ==Viewer tag=={58,148,626,927|2ca0f199}
 
-## Creating an essay
+## Creating an essay {#create-essay}
 
 In this portion of the tutorial we will create an essay on Vincent van Gogh's =="Bedroom in Arles"=={Q724377} paintings.  The tutorial will demonstrate the use of a number of Juncture features including:
 - [Opening a new essay file](#new-essay)
@@ -60,7 +60,7 @@ In this portion of the tutorial we will create an essay on Vincent van Gogh's ==
 - [Creating an information popup](#create-infobox) that is opened when the cursor is positioned over the relevant text
 - [Adding an essay header](#add-essay-header) with a title, subtitle and banner image
 
-### Opening a new essay file {#new-essay}
+### [⇧](#create-essay) Opening a new essay file {#new-essay}
 
 .ve-media gh:juncture-digital/media/videos/New_Essay.mp4 right
 
@@ -72,13 +72,13 @@ For our example the new folder is named `bedroom-in-arles`.  Since the folder na
 
 After entering the name of the folder to be created and selecting `Add`, the folder and `README.md` file is created.  The Juncture editor opens the `README.md` file for editing.
 
-### Add essay text {#adding-text}
+### [⇧](#create-essay) Add essay text {#adding-text}
 
 In this example we will use text from the _Bedroom in Arles_ Wikipedia article.  In this video clip text is copied from various sections of the Wikipedia article and pasted into the Juncture editor window.  ==The result of this copy and paste sequence=={1:14} is the addiiton of unformatted text in our essay.  In the next portion of the tutorial we will perform some light formatting using some Markdown tags.
 
 .ve-media gh:juncture-digital/media/videos/Add_Text.mp4 width=80%
 
-### Format essay text {#simple-formatting}
+### [⇧](#create-essay) Format essay text {#simple-formatting}
 
 .ve-media gh:juncture-digital/media/videos/Text_Formatting.mp4 right
 
@@ -89,7 +89,7 @@ After adding the plain text some formatting is applied.
 - ==Format block quote=={29,32} - A block qoute is defined by adding a greater-than symbol (`>`) at the beginning of the quoted passage.
 - ==Format list=={35,48} - The _Provenance_ section is an unordered list of text.  This is formatted by adding a dash (`-`) and space character at the start of the line for each list item.
 
-### Add citation {#add-citation}
+### [⇧](#create-essay) Add citation {#add-citation}
 
 .ve-media gh:juncture-digital/media/videos/Add_Footnote.mp4 right
 
@@ -99,7 +99,7 @@ In Juncture, a citation reference consists of an ID enclosed in brackets.  The c
 
 Our blanket citation at the start of the essay is also italicized (by enclosing text with underscore characters) and is separated from the essay text with a horizontal rule.  This is only done for stylistic purposes to demonstrate some Markdown formatting.
 
-### Add image {#add-image}
+### [⇧](#create-essay) Add image {#add-image}
 
 .ve-media gh:juncture-digital/media/videos/Add_Image.mp4 width=80%
 
@@ -107,7 +107,7 @@ In this example an image is added to the essay by ==dragging the image from the 
 
 The default behavior for the _.ve-media_ viewer is to display the image the full width of the essay.  For this example we will position the image in the right half of the essay and allow the section text to wrap around the image if needed.  Repositioning the image is accomplished by adding the `right` attribute to the _.ve-media_ tag as can be ==seen in this clip=={8}.
 
-### Add image zoom interaction {#add-zoomto}
+### [⇧](#create-essay) Add image zoom interaction {#add-zoomto}
 
 .ve-media gh:juncture-digital/media/videos/Add_Image_Zoom_Interaction.mp4 right
 
@@ -119,7 +119,7 @@ After the coordinates have been copied they can be associated with the relevant 
 
 When in preview mode,  notice that the marked text is now clicakble.  Clicking on the text will cause the media viewer to zoom in on the image region of interest.
 
-### Add media viewer for comparing two images {#add-image-compare}
+### [⇧](#create-essay) Add media viewer for comparing two images {#add-image-compare}
 
 The _.ve-media_ viewer has two modes for viewing multiple images, `compare` and `grid` mode.  In `compare` mode 2 images are stacked and a slider is used to show/hide relevant sections of each image.  To use the _.ve-media_ viewer in one of the multi-image modes the IIIF manifest URLs for each image are defined in an indented Markdown list following the _.ve-media_ tag.  The mode is specified by adding the _compare_ or _grid_ attribute to the tag.  
 
@@ -127,7 +127,7 @@ The _.ve-media_ viewer has two modes for viewing multiple images, `compare` and 
 
 In this sample essay both the viewer mode attribute (_compare_) and a positioning attribute (_right_) are specified.  The 2 images to be compared are defined in the Markdown list immediately following the tag.  In this essay one of van Gogh's sketches and first version finished painting are compared.  The image list can be created manually or using the drag-n-drop gesture used to add the first image.   When using the drag-n-drop approach the second image is dropped over the _.ve-media_ tag created by the drag-n-drop of the first image.
 
-### Add media viewer for displaying the 3 paintings {#add-image-grid}
+### [⇧](#create-essay) Add media viewer for displaying the 3 paintings {#add-image-grid}
 
 In this portion of the tutorial a _.ve-media_ viewer instance is added in _grid_ mode to display the 3 versions of the painting side-by-side.  Each painting is displayed as a clickable thumbnail.  When clicked, a popup is displayed with image in a full media viewer enabling deep-zoom and panning of the painting image.
 
@@ -135,7 +135,7 @@ In this portion of the tutorial a _.ve-media_ viewer instance is added in _grid_
 
 Similar to how the _.ve-media_ tag was created for comparing the original painting and sketch, the image list in _grid_ mode is created by dragging and dropping the image for each of the painting versions into the Juncture editor window.
 
-### Add essay header with title and banner image {#add-essay-header}
+### [⇧](#create-essay) Add essay header with title and banner image {#add-essay-header}
 
 Our last addition to the sample essay is the addition of a header for the displaying the essay title and subtitle.  In this header we are also including a banner image that is obtained from the Wikimedia Commons site.
 
