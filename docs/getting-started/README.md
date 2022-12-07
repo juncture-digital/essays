@@ -4,15 +4,17 @@
 
 # Getting Started Guide {#top}
 
-This tutorial provides step-by-step instructions for creating a Juncture essay.  The created essay will incorporate a number of Juncture features including the use of an embedded media viewer for viewing a high-resolution image and the use of the media viewer for displaying an image grid and comparing two images.  The tutorial provides detailed instructions with accompanying videos and/or interactive images for each step.
+This tutorial provides step-by-step instructions for creating a Juncture essay.  The created essay will incorporate a number of Juncture features including the use of an embedded media viewer for viewing a high-resolution image and the use of the media viewer for displaying an image grid and comparing two images.  The tutorial provides detailed instructions with accompanying videos and/or interactive images for each step.  Most of the tutorial sections include a short video clip demonstrating the action that need to be accomplished.  Some sections also include links in the text for starting the video at specific points.
 
-## Sign-up for Github account
+## Prerequisites
 
-A Github account is required to use Juncture.  Juncture uses Github for storing and managing content files.  **Github is a free Internet hosting service** commonly used for software development projects.  It provides features for version control and workflow management for distributed teams.
+The only prerequisite for using Juncture is a Github account.  Juncture uses Github for storing and managing essay files.  **Github is a free Internet hosting service** commonly used for software development projects.  It provides features for version control and workflow management for distributed teams.
 
-For Juncture we primarly use Github as a file hosting service, similar to how one might use Dropbox or Google Drive. While Juncture is able to use some of the more advanced Github features (like website hosting) the primary use is for storing visual essay text files. Github content is organized into one or more repositories. Users unfamiliar with Github can think of a repository as a workspace or a collection of folders. 
+Juncture primarly uses Github as a file hosting service, similar to how one might use Dropbox or Google Drive. While Juncture is able to use some of the more advanced Github features (like website hosting) the primary use is  storing visual essay text files. Github content is organized into one or more repositories. Users unfamiliar with Github can think of a repository as a workspace or a collection of folders. 
 
 Juncture users have the option of manually creating and updating essay source files in Github or using the Juncture editor. When using the Juncture editor a user will not need to interact with the Github site directly as the Juncture editor will handle essay file creation and updates.
+
+### Sign-up for Github account
 
 If you don't already have a Github account one can be created at [https://github.com/signup](https://github.com/signup)
 
