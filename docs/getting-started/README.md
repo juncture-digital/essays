@@ -78,6 +78,7 @@ In this portion of the tutorial we will create an essay on Vincent van Gogh's ==
 - [Creating a text interaction to zoom](#create-zoomto) in on a region of an image referenced from the text
 - [Creating an information popup](#create-infobox) that is opened when the cursor is positioned over the relevant text
 - [Adding an essay header](#add-essay-header) with a title, subtitle and banner image
+- [Sharing the essay](#save-and-share)
 
 ### [⇧](#create-essay) Creating a new essay file {#new-essay}
 
@@ -158,7 +159,7 @@ Similar to how the _.ve-media_ tag was created for comparing the original painti
 
 Information popups are useful for providing a quick definition and overview of a term.  The information popup appears when a users cursor is positioned over the term.  Information popups are typically used to provide background on entities such as people, places, organizations, creative works, etc.  The data used in the creation of the information popup is retrieved from Wikidata and Wikipedia.  Wikidata is an open knowledge base hosted by the Wikimedia Foundation that can be read and edited by both humans and machines. Wikidata acts as the central source of common, open structured data used by Wikipedia, Wiktionary, Wikisource, and others. It is used in a variety of academic and industrial applications.
 
-Wikidata currently contains data for more than 100 million entities.  Each of these entities is associated with a unique Wikidata Identifier (or `Q` ID).  To create an information popup a term is associated with a QID obtained from Wikidata.  Finding a QID can be accomplished in a couple of ways.
+Wikidata currently contains data for more than 100 million entities.  Each of these entities is associated with a unique Wikidata Identifier (or "Q" ID).  To create an information popup a term is associated with a QID obtained from Wikidata.  Finding a QID can be accomplished in a couple of ways.
 - Using the search interface on the [Wikidata home page](https://www.wikidata.org/wiki/Wikidata:Main_Page) site
 - Using general web search tools (Google, Bing, etc) to locate the Wikipedia page associated with the entity of interest and then using the Wikidata link found in the left sidebar to navigate to the associated Wikdata page.  When on a Wikidata page the QID for the entity can be found in the top header and page URL.
 
@@ -179,3 +180,11 @@ Our last addition to the sample essay is the addition of a header for the displa
 .ve-media gh:juncture-digital/media/videos/Add_Header.mp4 width=80%
 
 The _.ve-header_ tag provides a few configuration options, including the definition of a navigation menu with an email contact form.  That is not used in this example, but we do configure the header title/nav bar to "stick" to the top of the browser window when content is scrolled.
+
+### [⇧](#create-essay) Save and share essay {#save-and-share}
+
+.ve-media gh:juncture-digital/media/videos/Save_and_Share.mp4 right
+
+While creating an essay Juncture will periodically save a version of the essay with the browser.  Because of this a user may navigate away from the Juncture Editor page or close the browser.  Upon returning to the Juncture editor the user is able to resume editing the essay text.  These automatic saves are only performed within the browser, the contents are not automatically saved to Github.  Saves to Github must be explicitly performed by pressing the `save` button in the Juncture toolbar at the top right of the editor window.
+
+If is recommended that intermediate versions of an essay be saved to Github periodically.  Once an essay has been completed it will need to be saved to Github to share with others.  Again, this is accomplished by clicking the save button in the Juncture toolbar.  Clicking the `launch` button in the toolbar will open the most recently saved version of the essay in Github in a new browser tab.  The URL in this new tab is the stable URL for the essay and can be used by others to view the essay.
