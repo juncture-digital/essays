@@ -170,6 +170,8 @@ this snippet creates an information popup for ==Vincent van Gogh=={Q5582} by wra
 
 .ve-media gh:juncture-digital/media/videos/Add_Entity_Infobox.mp4 width=80%
 
+A live version of an information popup for ==van Gogh=={Q5582} can be seen in this paragraph.  Hover over the  "van Gogh" text to see the popup in action.
+
 ### [⇧](#create-essay) Add essay header with title and banner image {#add-essay-header}
 
 Our last addition to the sample essay is the addition of a header for the displaying the essay title and subtitle.  In this header we are also including a banner image that is obtained from the Wikimedia Commons site.
