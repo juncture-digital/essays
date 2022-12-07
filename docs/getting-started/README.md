@@ -8,9 +8,9 @@ This tutorial provides step-by-step instructions for creating a Juncture essay. 
 
 ## Prerequisites
 
-The only prerequisite for using Juncture is a Github account.  Juncture uses Github for storing and managing essay files.  **Github is a free Internet hosting service** commonly used for software development projects.  It provides features for version control and workflow management for distributed teams.
+The only prerequisite for using Juncture is a Github account.  Juncture uses Github for storing and managing essay files.  **Github is a free Internet hosting service** commonly used for software development projects.  It provides features for version control and work flow management for distributed teams.
 
-Juncture primarly uses Github as a file hosting service, similar to how one might use Dropbox or Google Drive. While Juncture is able to use some of the more advanced Github features (like website hosting) the primary use is  storing visual essay text files. Github content is organized into one or more repositories. Users unfamiliar with Github can think of a repository as a workspace or a collection of folders. 
+Juncture primarily uses Github as a file hosting service, similar to how one might use Dropbox or Google Drive. While Juncture is able to use some of the more advanced Github features (like website hosting) the primary use is  storing visual essay text files. Github content is organized into one or more repositories. Users unfamiliar with Github can think of a repository as a workspace or a collection of folders. 
 
 Juncture users have the option of manually creating and updating essay source files in Github or using the Juncture editor. When using the Juncture editor a user will not need to interact with the Github site directly as the Juncture editor will handle essay file creation and updates.
 
@@ -76,7 +76,7 @@ After entering the name of the folder to be created and selecting `Add`, the fol
 
 ### [⇧](#create-essay) Add essay text {#adding-text}
 
-In this example we will use text from the _Bedroom in Arles_ Wikipedia article.  In this video clip text is copied from various sections of the Wikipedia article and pasted into the Juncture editor window.  ==The result of this copy and paste sequence=={1:14} is the addiiton of unformatted text in our essay.  In the next portion of the tutorial we will perform some light formatting using some Markdown tags.
+In this example we will use text from the _Bedroom in Arles_ Wikipedia article.  In this video clip text is copied from various sections of the Wikipedia article and pasted into the Juncture editor window.  ==The result of this copy and paste sequence=={1:14} is the addition of unformatted text in our essay.  In the next portion of the tutorial we will perform some light formatting using some Markdown tags.
 
 .ve-media gh:juncture-digital/media/videos/Add_Text.mp4 width=80%
 
@@ -87,8 +87,8 @@ In this example we will use text from the _Bedroom in Arles_ Wikipedia article. 
 After adding the plain text some formatting is applied.
 
 - ==Add top-level section heading=={2,13} - A top-level section heading is defined by adding a single hash character to the start of the line with the heading text.
-- ==Format second-level section headings=={14,28} - Second-level sections and headings are similarily defined using double hash characters.
-- ==Format block quote=={29,32} - A block qoute is defined by adding a greater-than symbol (`>`) at the beginning of the quoted passage.
+- ==Format second-level section headings=={14,28} - Second-level sections and headings are similarly defined using double hash characters.
+- ==Format block quote=={29,32} - A block quote is defined by adding a greater-than symbol (`>`) at the beginning of the quoted passage.
 - ==Format list=={35,48} - The _Provenance_ section is an unordered list of text.  This is formatted by adding a dash (`-`) and space character at the start of the line for each list item.
 
 ### [⇧](#create-essay) Add citation {#add-citation}
@@ -105,7 +105,7 @@ Our blanket citation at the start of the essay is also italicized (by enclosing 
 
 .ve-media gh:juncture-digital/media/videos/Add_Image.mp4 width=80%
 
-In this example an image is added to the essay by ==dragging the image from the Wikipedia page=={0,3} to the Juncture editor window.  The image is dropped at the desired position in the essay text.  When adding an image using drag-n-drop a _.ve-media_ tag with the IIIF manifest URL (short form) is automatically added to the essay text.  Juncture supports the addition of media from a number of hosting sites (incouyding Wiikipedia ans Wikimedia Commons) using drag-n-drop.  For a complete list refer to **[TODO]()**.
+In this example an image is added to the essay by ==dragging the image from the Wikipedia page=={0,3} to the Juncture editor window.  The image is dropped at the desired position in the essay text.  When adding an image using drag-n-drop a _.ve-media_ tag with the IIIF manifest URL (short form) is automatically added to the essay text.  Juncture supports the addition of media from a number of hosting sites (including Wikipedia and Wikimedia Commons) using drag-n-drop.  For a complete list refer to **[TODO]()**.
 
 The default behavior for the _.ve-media_ viewer is to display the image the full width of the essay.  For this example we will position the image in the right half of the essay and allow the section text to wrap around the image if needed.  Repositioning the image is accomplished by adding the `right` attribute to the _.ve-media_ tag as can be ==seen in this clip=={8}.
 
@@ -119,7 +119,7 @@ For this interaction the bounding-box coordinates of the image region of interes
 
 After the coordinates have been copied they can be associated with the relevant text in the editor (when in edit mode).  This can accomplished manually or by selecting the text and clicking on the code icon ('</>') in the Markdown toolbar.  The linked text is enclosed with double equal signs and the coordinates are added as a value in the attributes attached to the linked text.
 
-When in preview mode,  notice that the marked text is now clicakble.  Clicking on the text will cause the media viewer to zoom in on the image region of interest.
+When in preview mode,  notice that the marked text is now clickable.  Clicking on the text will cause the media viewer to zoom in on the image region of interest.
 
 ### [⇧](#create-essay) Add media viewer for comparing two images {#add-image-compare}
 
