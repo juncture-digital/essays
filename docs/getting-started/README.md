@@ -82,7 +82,7 @@ In this portion of the tutorial we will create an essay on Vincent van Gogh's ==
 - [Adding an essay header](#add-essay-header) with a title, subtitle and banner image
 - [Sharing the essay](#save-and-share)
 
-A version of a completed essay from this tutorial can be see at [https://beta.juncture-digital.org/snagsby/essays/bedroom-in-arles](https://beta.juncture-digital.org/snagsby/essays/bedroom-in-arles)
+**A version of a completed essay from this tutorial can be seen at [https://beta.juncture-digital.org/snagsby/essays/bedroom-in-arles](https://beta.juncture-digital.org/snagsby/essays/bedroom-in-arles)**
 
 ### [⇧](#create-essay) Creating a new essay file {#new-essay}
 
@@ -98,7 +98,7 @@ After entering the name of the folder to be created and selecting `Add`, the fol
 
 ### [⇧](#create-essay) Add essay text {#adding-text}
 
-In this example we will use text from the _Bedroom in Arles_ Wikipedia article.  In this video clip text is copied from various sections of the Wikipedia article and pasted into the Juncture editor window.  ==The result of this copy and paste sequence=={1:14} is the addition of unformatted text in our essay.  In the next portion of the tutorial we will perform some light formatting using some Markdown tags.
+In this example we will use text from the _Bedroom in Arles_ Wikipedia article.  In this video clip, text is copied from various sections of the Wikipedia article and pasted into the Juncture editor window.  ==The result of this copy and paste sequence=={1:14} is the addition of unformatted text in our essay.  In the next portion of the tutorial we will perform some light formatting using some Markdown tags.
 
 .ve-media gh:juncture-digital/media/videos/Add_Text.mp4 width=80%
 
