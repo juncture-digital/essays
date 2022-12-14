@@ -10,9 +10,12 @@ Most of the tutorial sections include a short video clip demonstrating the actio
 
 ---
 
-## Prerequisites
+<details>
+    <summary>Prerequisites</summary>
+        ## Prerequisites
 
-The only true prerequisite for using Juncture is a Github account.  **Github is a free Internet hosting service** commonly used for software development projects.  It provides features for version control and work flow management for distributed teams.  Juncture uses Github for storing and managing essay files.  In addition to a Github account, some familiarity with Markdown and IIIF would be beneficial.  
+        The only true prerequisite for using Juncture is a Github account.  **Github is a free Internet hosting service** commonly used for software development projects.  It provides features for version control and work flow management for distributed teams.  Juncture uses Github for storing and managing essay files.  In addition to a Github account, some familiarity with Markdown and IIIF would be beneficial.
+</details>
 
 ### Markdown
 
