@@ -8,6 +8,8 @@ This tutorial provides step-by-step instructions for creating a Juncture essay. 
 
 Most of the tutorial sections include a short video clip demonstrating the actions that need to be accomplished.  Some sections also include links in the text for starting the video at specific points.
 
+---
+
 ## Prerequisites
 
 The only true prerequisite for using Juncture is a Github account.  **Github is a free Internet hosting service** commonly used for software development projects.  It provides features for version control and work flow management for distributed teams.  Juncture uses Github for storing and managing essay files.  In addition to a Github account, some familiarity with Markdown and IIIF would be beneficial.  
@@ -48,6 +50,8 @@ Logging into Github from Juncture authorizes Juncture to interact with your Gith
 3. ==Authorize Juncture to write Github content=={9,10}.  This will only be required on an initial login.  (Note that this authorization may be revoked using in [Github settings](https://github.com/settings/apps/authorizations))
 4. ==Open the Juncture editor=={15} after logging in with Github.
 
+---
+
 ## The Juncture Editor
 
 Juncture provides a web-based editor for authoring visual essays.  The editor handles Github content management and includes a convenient preview option for viewing working versions of essays.  The Juncture editor also supports the automatic creation of viewer tags by simply dragging images and other media (including YouTube videos) into the browser window.
@@ -66,6 +70,8 @@ This section provides an overview of the Juncture editor sections.  Video clips 
     - ==Launch=={560,0,522,762|59ecd40f} - The launch button will display the essay in a new tab
 5. ==The main editor window=={0,0,1081,1602|9d0bf556}
 6. A sample ==Viewer tag=={58,148,626,927|2ca0f199}
+
+---
 
 ## Creating an essay {#create-essay}
 
