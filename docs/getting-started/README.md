@@ -15,30 +15,37 @@ Most of the tutorial sections include a short video clip demonstrating the actio
         <p> The only true prerequisite for using Juncture is a Github account.  **Github is a free Internet hosting service** commonly used for software development projects.  It provides features for version control and work flow management for distributed teams.  Juncture uses Github for storing and managing essay files.  In addition to a Github account, some familiarity with Markdown and IIIF would be beneficial.</p>
 </details>
 
-### Markdown
+<details>
+    <summary>Markdown</summary>
 
-Markdown is a lightweight markup language for creating formatted text using a plain-text editor.   Behind the scenes the Markdown text is converted into HTML for display in web browsers.  Juncture extends the core Markdown language with a few simple tags and conventions enabling rich essays to be created by anyone.
+        <p>Markdown is a lightweight markup language for creating formatted text using a plain-text editor.   Behind the scenes the Markdown text is converted into HTML for display in web browsers.  Juncture extends the core Markdown language with a few simple tags and conventions enabling rich essays to be created by anyone.
 
-- [Markdown Guide](https://www.markdownguide.org/)
-- [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-- [Short (12min) Markdown tutorial on YouTube](https://www.youtube.com/watch?v=6A5EpqqDOdk)
+            - [Markdown Guide](https://www.markdownguide.org/)
+            - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+            - [Short (12min) Markdown tutorial on YouTube](https://www.youtube.com/watch?v=6A5EpqqDOdk)</p>
+</details>
 
-### IIIF (International Image Interoperability Framework)
+<details>
+    <summary>IIIF (International Image Interoperability Framework)</summary><p>
 
-IIIF is a set of open standards for delivering high-quality, attributed digital objects online at scale. It’s also an international community developing and implementing the IIIF APIs. IIIF is backed by a consortium of leading cultural institutions.  Juncture makes extensive use of IIIF, using existing IIIF resources when available, and converting non-IIIF images, videos, and audio into IIIF when used in Juncture essays.  
+        IIIF is a set of open standards for delivering high-quality, attributed digital objects online at scale. It’s also an international community developing and implementing the IIIF APIs. IIIF is backed by a consortium of leading cultural institutions.  Juncture makes extensive use of IIIF, using existing IIIF resources when available, and converting non-IIIF images, videos, and audio into IIIF when used in Juncture essays.  
 
-- [IIIF Home Page](https://iiif.io/)
-- [Introduction to IIIF](https://www.youtube.com/watch?v=K4i7YlZEMGA), a presentation by Josh Hadro given at the 2021 IIIF Annual Conference
+        - [IIIF Home Page](https://iiif.io/)
+        - [Introduction to IIIF](https://www.youtube.com/watch?v=K4i7YlZEMGA), a presentation by Josh Hadro given at the 2021 IIIF Annual Conference</p></details>
 
-### Github
+<details>
+    <summary>Github</summary><p>
 
-Juncture primarily uses Github as a file hosting service, similar to how one might use Dropbox or Google Drive. While Juncture is able to use some of the more advanced Github features (like website hosting) the primary use is  storing visual essay text files. Github content is organized into one or more repositories. Users unfamiliar with Github can think of a repository as a workspace or a collection of folders. 
+        Juncture primarily uses Github as a file hosting service, similar to how one might use Dropbox or Google Drive. While Juncture is able to use some of the more advanced Github features (like website hosting) the primary use is  storing visual essay text files. Github content is organized into one or more repositories. Users unfamiliar with Github can think of a repository as a workspace or a collection of folders. 
 
-Juncture users have the option of manually creating and updating essay source files in Github or using the Juncture editor. When using the Juncture editor a user will not need to interact with the Github site directly as the Juncture editor will handle essay file creation and updates.
+        Juncture users have the option of manually creating and updating essay source files in Github or using the Juncture editor. When using the Juncture editor a user will not need to interact with the Github site directly as the Juncture editor will handle essay file creation and updates.</p></details>
 
-#### Sign-up for Github account
+<details>
+    <summary>Sign-up for Github account</summary><p>
 
-If you don't already have a Github account one can be created at [https://github.com/signup](https://github.com/signup)
+        If you don't already have a Github account one can be created at [https://github.com/signup](https://github.com/signup)</p></details>
+
+---
 
 ## Login with Github and open Juncture editor
 
