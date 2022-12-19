@@ -1,5 +1,4 @@
 # Examples
 
-## Media Examples
-
-## Map Examples
+-  [Media](media)
+-  [Map](map)
