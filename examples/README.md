@@ -1,4 +1,4 @@
 # Examples
 
 -  [Media](media)
--  [Map](map)
+-  [Maps](maps)
