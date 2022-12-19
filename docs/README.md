@@ -255,6 +255,7 @@ In the example above the text `dolor` is marked and associated with the attribut
 - **Show entity information popup** - `==Vincent van Gogh=={Q5582}`
 
 ### [⇧](#top) Image zoom {#zoom}
+.ve-media gh:juncture-digital/media/videos/Image_Zoom_Example.mp4 right
 
 The image zoom behavior causes the `.ve-media` viewer to zoom to a specific region of an image.  The region of interest is specified using a set of 4 coordinates defining a rectangular bounding box.  The coordinates are the `x-position`, `y-position`, `width`, and `height`.  The coordinate values may be defined as absolute pixel values or as a percentage relative to the full size of the source image.[^iiif-region]
 
