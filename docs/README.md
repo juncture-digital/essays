@@ -100,6 +100,11 @@ The `.ve-map` tag creates a map viewer that displays a base map with optional ma
 
 ### .ve-map Attributes
 
+| **Syntax**      | Type      | Description |
+| ----------- | ----------- | ----------- |
+| **center**      | Geographic Coordinates or Wikidata QID      | The _center_ attribute defines the center point of a displayed map.       |
+| **Paragraph**   | Number       | The _zoom_ attribute defines the zoom level of a displayed map.       |
+
 - **center** (_Geographic Coordinates_ or _Wikidata QID_):  The _center_ attribute defines the center point of a displayed map.
 - **zoom** (_number_):  The _zoom_ attribute defines the zoom level of a displayed map.
 
