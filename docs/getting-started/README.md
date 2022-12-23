@@ -18,9 +18,9 @@ The only true prerequisite for using Juncture is a Github account.  **Github is 
 If you don't already have a Github account one can be created at [https://github.com/signup](https://github.com/signup)
 
 For more information on the following topics, please click on the internal link.
-- [Markdown](#markdown)
-- [IIIF (International Image Interoperability Framework)](#IIIF-International-Image-Interoperability-Framework)
-- [Github](#github)
+* [Markdown](#markdown)
+* [IIIF (International Image Interoperability Framework)](#iif-international-image-interoperability-framework)
+* [Github](#github)
 
 ### Markdown
 
