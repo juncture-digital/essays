@@ -19,10 +19,10 @@ If you don't already have a Github account one can be created at [https://github
 
 For more information on the following topics, please click on the internal link.
 * [Markdown](#markdown)
-* [IIIF (International Image Interoperability Framework)](#iif-international-image-interoperability-framework)
+* [IIIF (International Image Interoperability Framework)](#iiif)
 * [Github](#github)
 
-### Markdown
+### Markdown {#markdown}
 
 Markdown is a lightweight markup language for creating formatted text using a plain-text editor.   Behind the scenes the Markdown text is converted into HTML for display in web browsers.  Juncture extends the core Markdown language with a few simple tags and conventions enabling rich essays to be created by anyone.
 
@@ -30,14 +30,14 @@ Markdown is a lightweight markup language for creating formatted text using a pl
 - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - [Short (12min) Markdown tutorial on YouTube](https://www.youtube.com/watch?v=6A5EpqqDOdk)
             
-### IIIF (International Image Interoperability Framework)
+### IIIF (International Image Interoperability Framework) {#iiif}
 
 IIIF is a set of open standards for delivering high-quality, attributed digital objects online at scale. It’s also an international community developing and implementing the IIIF APIs. IIIF is backed by a consortium of leading cultural institutions.  Juncture makes extensive use of IIIF, using existing IIIF resources when available, and converting non-IIIF images, videos, and audio into IIIF when used in Juncture essays.  
 
 - [IIIF Home Page](https://iiif.io/)
 - [Introduction to IIIF](https://www.youtube.com/watch?v=K4i7YlZEMGA), a presentation by Josh Hadro given at the 2021 IIIF Annual Conference
 
-### Github
+### Github {#github}
 
 Juncture primarily uses Github as a file hosting service, similar to how one might use Dropbox or Google Drive. While Juncture is able to use some of the more advanced Github features (like website hosting) the primary use is  storing visual essay text files. Github content is organized into one or more repositories. Users unfamiliar with Github can think of a repository as a workspace or a collection of folders. 
 
