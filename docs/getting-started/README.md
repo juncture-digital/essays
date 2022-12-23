@@ -187,7 +187,7 @@ If is recommended that intermediate versions of an essay be saved to Github peri
 
 ---
 
-### Background Information (cont.)
+## Background Information (cont.)
 ### Markdown {#markdown}
 
 Markdown is a lightweight markup language for creating formatted text using a plain-text editor.   Behind the scenes the Markdown text is converted into HTML for display in web browsers.  Juncture extends the core Markdown language with a few simple tags and conventions enabling rich essays to be created by anyone.
