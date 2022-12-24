@@ -2,7 +2,7 @@
 
 # Ann Arbor
 
-_From Wikipedia, the free encyclopedia_[^1]
+_From Wikipedia, the free encyclopedia_
 ---
 Ann Arbor is a city in the U.S. state of Michigan and the county seat of Washtenaw County. It is a suburb of Detroit. The 2020 census recorded its population to be 123,851. It is the principal city of the Ann Arbor Metropolitan Statistical Area, which encompasses all of Washtenaw County. Ann Arbor is also included in the Greater Detroit Combined Statistical Area and the Great Lakes megalopolis, the most populated and largest megalopolis in North America.
 
