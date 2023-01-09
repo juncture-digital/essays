@@ -44,7 +44,7 @@
 - **[Useful Background](#background)**
     - [Juncture Architecture](#juncture-architecture)
     - [Github](#github)
-    - [IIIF](#iiif)
+    - [IIIF (International Image Interoperability Framework)](#iiif)
     - [Self-hosted Media Collections](#self-hosted-media)
     - [Wikidata](#wikidata)
 
@@ -311,15 +311,24 @@ Wikidata entity identifiers ("Q" IDs) can be obtained by querying Wikidata or by
 
 # [⇧](#top) Useful Background {#background}
 
-## [⇧](#top) Juncture Architecture {#juncture-architecture}
+### [⇧](#top) Juncture Architecture {#juncture-architecture}
 
-## [⇧](#top) Github {#github}
+### [⇧](#top) Github {#github}
+Juncture primarily uses Github as a file hosting service, similar to how one might use Dropbox or Google Drive. While Juncture is able to use some of the more advanced Github features (like website hosting) the primary use is storing visual essay text files. Github content is organized into one or more repositories. Users unfamiliar with Github can think of a repository as a workspace or a collection of folders.
 
-## [⇧](#top) IIIF {#iiif}
+Juncture users have the option of manually creating and updating essay source files in Github or using the Juncture editor. When using the Juncture editor a user will not need to interact with the Github site directly as the Juncture editor will handle essay file creation and updates.
 
-## [⇧](#top) Self-Hosted Media Collections {#self-hosted-media}
+If you don't already have a Github account one can be created at https://github.com/signup
 
-## [⇧](#top) Wikidata {#wikidata}
+### [⇧](#top) IIIF (International Image Interoperability Framework) {#iiif}
+IIIF is a set of open standards for delivering high-quality, attributed digital objects online at scale. It’s also an international community developing and implementing the IIIF APIs. IIIF is backed by a consortium of leading cultural institutions.  Juncture makes extensive use of IIIF, using existing IIIF resources when available, and converting non-IIIF images, videos, and audio into IIIF when used in Juncture essays.  
+
+- [IIIF Home Page](https://iiif.io/)
+- [Introduction to IIIF](https://www.youtube.com/watch?v=K4i7YlZEMGA), a presentation by Josh Hadro given at the 2021 IIIF Annual Conference
+
+### [⇧](#top) Self-Hosted Media Collections {#self-hosted-media}
+
+### [⇧](#top) Wikidata {#wikidata}
 
 
 # [⇧](#top) Hosting Options {#hosting}
